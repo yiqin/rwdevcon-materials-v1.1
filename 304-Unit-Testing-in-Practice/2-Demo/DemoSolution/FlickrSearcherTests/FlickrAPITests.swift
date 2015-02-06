@@ -33,11 +33,14 @@ class FlickrAPITests : BaseTests {
       XCTAssertTrue(success, "Success was not true!")
       XCTAssertNotNil(result, "Result was nil!")
       
+        XCTFail("Fail!!!!")
       //      XCTFail("HIT THIS METHOD!")
       expectation.fulfill()
+        
+        
     }
     
-    waitForExpectationsWithTimeout(standardTimeout, handler: nil)
+    waitForExpectationsWithTimeout(localTimeout, handler: nil)
     NSLog("End of test method body")
   }
   
