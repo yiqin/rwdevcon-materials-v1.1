@@ -87,7 +87,7 @@ public class CoreDataStack {
     mainContext().save(&error)
     
     if let error = error {
-      assert(error != nil, "ERROR SAVING CONTEXT: \(error)")
+      assert(false, "ERROR SAVING CONTEXT: \(error)")
     }
   }
   
