@@ -68,6 +68,8 @@ class CardNode: ASCellNode {
     if let frames = frameSetOrNil {
       imageNode.frame = frames.imageFrame   // just an assignment , super fast.
       
+        titleTextNode.frame = frames.titleFrame         // Quick assignment.......
+        
     }
   }
   

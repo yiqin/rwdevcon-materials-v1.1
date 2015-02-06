@@ -19,6 +19,21 @@ class DemoViewController: UIViewController {
     let card = cards[0]
     
     
+    // We put a lot of staff in CardNode.
+    dispatch_async(dispatch_queue_t.backgroundQueue){
+        let node = CardNode(card: card)
+        node.measure(UIScreen.mainScreen().bounds.size)
+        let origin = UIScreen.mainScreen().bounds.originForCenteredRectWithSize(node.calculatedSize)
+        node.frame = CGRect(origin: origin, size: node.calculatedSize)
+        
+        dispatch_async(dispatch_queue_t.mainQueue){
+            self.view.addSubview(node.view)
+        }
+        
+    }
+    
+    
+    
   }
   
   func addDisplayLink() {
