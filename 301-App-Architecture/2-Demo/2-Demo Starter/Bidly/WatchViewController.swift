@@ -1,7 +1,7 @@
 
 import UIKit
 
-class WatchViewController: UITableViewController {
+class WatchViewController: UITableViewController, WatchlistObserver {
 
     var watchlist:Watchlist!
     
@@ -19,10 +19,11 @@ class WatchViewController: UITableViewController {
     return formatter
   }()
 
-  required init(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-    loadWatchlist()
-  }
+    // This is no longer WatchViewController's responsibility
+//  required init(coder aDecoder: NSCoder) {
+//    super.init(coder: aDecoder)
+//    loadWatchlist()
+//  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,11 +36,11 @@ class WatchViewController: UITableViewController {
   }
 
   // This must be public because other view controllers need to access it.
-  func sortItems() {
-    items.sort({ item1, item2 in
-      item1.itemName.localizedStandardCompare(item2.itemName) == NSComparisonResult.OrderedAscending
-    })
-  }
+//  func sortItems() {
+//    items.sort({ item1, item2 in
+//      item1.itemName.localizedStandardCompare(item2.itemName) == NSComparisonResult.OrderedAscending
+//    })
+//  }
 
   // MARK: Segues
 
@@ -47,7 +48,7 @@ class WatchViewController: UITableViewController {
     if segue.identifier == "ItemDetail" {
       if let indexPath = tableView.indexPathForCell(sender as UITableViewCell) {
         let controller = segue.destinationViewController as ItemDetailViewController
-        controller.item = items[indexPath.row]
+        // controller.item = items[indexPath.row]
         controller.item = watchlist.items[indexPath.row]
 //        controller.activityViewController = activityViewController
 //        controller.searchViewController = searchViewController
@@ -65,7 +66,7 @@ class WatchViewController: UITableViewController {
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath) as ItemCell
-    let item = items[indexPath.row]
+    let item = watchlist.items[indexPath.row]
 
     var highestBidAmount = 0.0
     for bid in item.bids {
@@ -85,8 +86,11 @@ class WatchViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    items.removeAtIndex(indexPath.row)
+    watchlist.items.removeAtIndex(indexPath.row)
     saveWatchlist()
+    
+    // ALso need to change somtehing here. But I'm lost.
+    
     tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
   }
 

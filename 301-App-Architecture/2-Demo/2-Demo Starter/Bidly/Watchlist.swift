@@ -24,6 +24,13 @@ class Watchlist {
     }
   }
 
+    
+      func sortItems() {
+        items.sort({ item1, item2 in
+          item1.itemName.localizedStandardCompare(item2.itemName) == NSComparisonResult.OrderedAscending
+        })
+      }
+    
     // This must be public because other view controllers need to access it.
     func saveWatchlist() {
         println("Saving file to: '\(dataFilePath())'")
