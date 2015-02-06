@@ -1,0 +1,41 @@
+{  
+   "person":{  
+      "id":"83136939@N00",
+      "nsid":"83136939@N00",
+      "ispro":0,
+      "can_buy_pro":0,
+      "iconserver":48,
+      "iconfarm":1,
+      "path_alias":"loudguitars",
+      "username":{  
+         "_content":"loudguitars"
+      },
+      "realname":{  
+         "_content":"Ellen"
+      },
+      "description":{  
+         "_content":""
+      },
+      "photosurl":{  
+         "_content":"https:\/\/www.flickr.com\/photos\/loudguitars\/"
+      },
+      "profileurl":{  
+         "_content":"https:\/\/www.flickr.com\/people\/loudguitars\/"
+      },
+      "mobileurl":{  
+         "_content":"https:\/\/m.flickr.com\/photostream.gne?id=1015658"
+      },
+      "photos":{  
+         "firstdatetaken":{  
+            "_content":"2003-08-22 12:04:37"
+         },
+         "firstdate":{  
+            "_content":"1122618065"
+         },
+         "count":{  
+            "_content":"2600"
+         }
+      }
+   },
+   "stat":"ok"
+}

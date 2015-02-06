@@ -1,0 +1,63 @@
+[
+ {
+ "title" : "The Cat in the Hat",
+ "year" : 1957,
+ "image" : "CatInTheHat"
+ },
+ {
+ "title" : "Green Eggs and Ham",
+ "year" : 1960,
+ "image" : "GreenEggsAndHam"
+ },
+ {
+ "title" : "Oh, the Places You'll Go!",
+ "year" : 1990,
+ "image" : "OhThePlacesYoullGo"
+ },
+ {
+ "title" : "The Lorax",
+ "year" : 1971,
+ "image" : "Lorax"
+ },
+ {
+ "title" : "How The Grinch Stole Christmas!",
+ "year" : 1957,
+ "image" : "HowTheGrinchStoleChristmas"
+ },
+ {
+ "title" : "One Fish Two Fish Red Fish Blue Fish",
+ "year" : 1960,
+ "image" : "OneFishTwoFishRedFishBlueFish"
+ },
+ {
+ "title" : "Horton Hears A Who!",
+ "year" : 1954,
+ "image" : "HortonHearsAWho"
+ },
+ {
+ "title" : "And to Think That I Saw it on Mulberry Street",
+ "year" : 1937,
+ "image" : "AndToThinkThatISawItOnMulberryStreet"
+ },
+ {
+ "title" : "Hop on Pop",
+ "year" : 1963,
+ "image" : "HopOnPop"
+ },
+ {
+ "title" : "If I Ran the Zoo",
+ "year" : 1950,
+ "image" : "IfIRanTheZoo"
+ },
+ {
+ "title" : "FoxInSocks",
+ "year" : 1965,
+ "image" : "FoxInSocks"
+ },
+ {
+ "title" : "Horton Hatches The Egg",
+ "year" : 1940,
+ "image" : "HortonHatchesTheEgg"
+ }
+ 
+]

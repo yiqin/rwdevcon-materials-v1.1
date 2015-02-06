@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "66044357@N06",
+    "path_alias" : null,
+    "description" : {
+      "_content" : "My blogs:\n<a href=\"http:\/\/wigglephotos.tumblr.com\" rel=\"nofollow\">3d photos\/<\/a>\n\n<a href=\"http:\/\/fotoplastikon.tumblr.com\/\" rel=\"nofollow\">fotoplastikon.tumblr.com\/<\/a>"
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/66044357@N06\/"
+    },
+    "nsid" : "66044357@N06",
+    "realname" : {
+      "_content" : "Filip  Fornalik"
+    },
+    "ispro" : 0,
+    "iconserver" : "8127",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : "Poland"
+    },
+    "username" : {
+      "_content" : "yeliff"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=65999035"
+    },
+    "timezone" : {
+      "label" : "Sarajevo, Skopje, Warsaw, Zagreb",
+      "offset" : "+01:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2011-07-31 20:54:39"
+      },
+      "firstdate" : {
+        "_content" : "1312664931"
+      },
+      "count" : {
+        "_content" : 182
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/66044357@N06\/"
+    },
+    "iconfarm" : 9
+  }
+}

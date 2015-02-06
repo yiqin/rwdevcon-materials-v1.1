@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "96411784@N02",
+    "path_alias" : "l_der_l",
+    "description" : {
+      "_content" : ""
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/l_der_l\/"
+    },
+    "nsid" : "96411784@N02",
+    "realname" : {
+      "_content" : "Natalya Usoltseva"
+    },
+    "ispro" : 0,
+    "iconserver" : "5566",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : ""
+    },
+    "username" : {
+      "_content" : "NataJester"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=96391436"
+    },
+    "timezone" : {
+      "label" : "Pacific Time (US & Canada); Tijuana",
+      "offset" : "-08:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2012-01-03 01:46:31"
+      },
+      "firstdate" : {
+        "_content" : "1369500815"
+      },
+      "count" : {
+        "_content" : 32
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/l_der_l\/"
+    },
+    "iconfarm" : 6
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "60109376@N00",
+    "path_alias" : "rikkis_refuge",
+    "description" : {
+      "_content" : "Rikki's Refuge is an animal sanctuary in Orange, Virginia. We hope you enjoy our photos, and we encourage you to come out and volunteer and meet the animals in person.\n\nMany of our earlier images are loaded to Flickr on the small side because they were loaded through a DIALUP connection! No high speed DSL for us yet. But we do have all the images here in high resolution version. \n\nWe are always looking for ways to raise funds for the creatures, so if you want to rent an image for a project, we can dig though our CDs and find it for you. \n\nOf course, our animals are available to work as models too. Seriously. \n\n<strong>Note:<\/strong> We registered for our Flickr account with a Yahoo email address, but we don't check it regularly. In fact, we just learned that we were cut off from Yahoo mail for inactivity! We have reactivated that account, but it is always best to go to Rikki's website (see link below) for contact info."
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/rikkis_refuge\/"
+    },
+    "nsid" : "60109376@N00",
+    "realname" : {
+      "_content" : "Rikki's  Refuge"
+    },
+    "ispro" : 1,
+    "iconserver" : "76",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : "Orange, VA, USA"
+    },
+    "username" : {
+      "_content" : "rikkis_refuge"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=3879052"
+    },
+    "mbox_sha1sum" : {
+      "_content" : "cfc7312af056e1d34cb02a507b9731fb8954fe05"
+    },
+    "timezone" : {
+      "label" : "Eastern Time (US & Canada)",
+      "offset" : "-05:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2000-05-02 17:11:45"
+      },
+      "firstdate" : {
+        "_content" : "1152132523"
+      },
+      "count" : {
+        "_content" : 7694
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/rikkis_refuge\/"
+    },
+    "iconfarm" : 1
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "77113401@N06",
+    "path_alias" : "sjekkiebunzing",
+    "description" : {
+      "_content" : "I like cats\n\nI like macro\n\nSometimes I do both at the same time"
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/sjekkiebunzing\/"
+    },
+    "nsid" : "77113401@N06",
+    "ispro" : 0,
+    "iconserver" : "7488",
+    "can_buy_pro" : 0,
+    "username" : {
+      "_content" : "Tjarko Busink"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=77068079"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2004-06-06 18:10:58"
+      },
+      "firstdate" : {
+        "_content" : "1361140887"
+      },
+      "count" : {
+        "_content" : 2258
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/sjekkiebunzing\/"
+    },
+    "iconfarm" : 8
+  }
+}

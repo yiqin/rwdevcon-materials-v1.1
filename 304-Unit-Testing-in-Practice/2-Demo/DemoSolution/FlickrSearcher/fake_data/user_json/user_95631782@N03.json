@@ -1,0 +1,38 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "95631782@N03",
+    "path_alias" : "odaddy1990",
+    "description" : {
+      "_content" : ""
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/odaddy1990\/"
+    },
+    "nsid" : "95631782@N03",
+    "ispro" : 0,
+    "iconserver" : "3860",
+    "can_buy_pro" : 0,
+    "username" : {
+      "_content" : "odaddy1990"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=95608728"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2011-10-02 15:01:15"
+      },
+      "firstdate" : {
+        "_content" : "1380384292"
+      },
+      "count" : {
+        "_content" : 906
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/odaddy1990\/"
+    },
+    "iconfarm" : 4
+  }
+}

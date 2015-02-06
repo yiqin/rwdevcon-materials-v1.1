@@ -1,0 +1,15 @@
+{  
+   "method":{  
+      "_content":"flickr.test.echo"
+   },
+   "api_key":{  
+      "_content":"[wouldn't you like to know]"
+   },
+   "format":{  
+      "_content":"json"
+   },
+   "nojsoncallback":{  
+      "_content":1
+   },
+   "stat":"ok"
+}

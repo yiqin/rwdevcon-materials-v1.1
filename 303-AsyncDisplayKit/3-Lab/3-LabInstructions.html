@@ -1,0 +1,247 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>3-LabInstructions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;margin:30px 0 0;padding:0;background:#fff}#wrapper{padding:20px}li{font-size:110%}li li{font-size:100%}li p{font-size:100%;margin:.5em 0}h1{color:#000}h2{color:#111}h3{color:#111;margin:0}h4{color:#111}h5{color:#111}h6{font-size:1em;line-height:1.5em;margin:1.5em 0}body,p,td,div{color:#111;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;word-wrap:break-word}a{color:#0d6ea1;text-decoration:none;-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;-ms-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}a:hover{color:#3593d9}body{font-size:15px;line-height:21px;margin:0 auto}h1{font-size:37px;line-height:42px;margin-top:42px;margin-bottom:21px}h2{font-size:27px;line-height:42px;margin-top:42px;margin-bottom:21px}h3{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}h4{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}p,ul,ol,pre,table,blockquote{margin-top:21px;margin-bottom:21px}hr{border:1px solid;margin:-1px 0}ul ul,ol ol,ul ol,ol ul{margin-top:0;margin-bottom:0}b,strong,em,small,code{line-height:1}.footnote{color:#0d6ea1;font-size:.8em;vertical-align:super}abbr,acronym{border-bottom:1px dotted #aaa}#wrapper img{max-width:100%;height:auto}dd{font-size:1em;margin-bottom:1em}li>p:first-child{margin:0}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{border:1px solid rgba(0,0,0,0.25);border-collapse:collapse;display:table;empty-cells:hide;margin:-1px 0 1.3125em;padding:0;table-layout:fixed}caption{display:table-caption;font-weight:700}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}tr{display:table-row}table th,table td{font-size:1.1em;line-height:1.3;padding:.5em 1em 0}table thead{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tbody{background:rgba(0,0,0,0.05)}table tfoot{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{display:inline-block;overflow:hidden;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#666}.poetry pre{display:block;font-family:Georgia,Garamond,serif !important;font-size:110% !important;font-style:italic;line-height:1.6em;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}blockquote p{font-size:110%;font-style:italic;line-height:1.6em}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;position:relative;vertical-align:super}sub{vertical-align:sub;top:-1px}p,h5{font-size:1.1429em;line-height:1.3125em;margin:1.3125em 0}dt,th{font-weight:700}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(200,200,200,0.25)}@media print{img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;color:#303030;padding:10px;position:relative;text-indent:0}}@media screen{.inverted{background:#252a2a}.inverted #wrapper{background:#252a2a;color:#eee}.inverted hr{border-color:#333f40 !important}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dt,.inverted dd{color:#eee}.inverted pre{background:#ccc}.inverted pre code{color:#111}.inverted table{background:none}.inverted table tr:nth-child(odd),.inverted table td:nth-child(odd){background:none}.inverted a{color:#acd1d5}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}}
+
+@media print{
+#generated-toc-clone,#generated-toc{display:none!important}
+}
+#generated-toc-clone li.missing,#mkreplaced-toc li.missing{list-style-type:none!important}#generated-toc-clone li, #mkreplaced-toc li{list-style-type:upper-roman}#generated-toc-clone li li, #mkreplaced-toc li li{list-style-type:decimal}#generated-toc-clone li li li,#mkreplaced-toc li li li{list-style-type:decimal-leading-zero}#generated-toc-clone li li li li,#mkreplaced-toc li li li li{list-style-type:lower-greek}#generated-toc-clone li li li li li,#mkreplaced-toc li li li li li{list-style-type:disc}#generated-toc-clone li li li li li li,#mkreplaced-toc li li li li li li{list-style-type:square}
+</style>
+
+</head>
+<body class="normal firstload">
+  <div id="wrapper">
+      <h1 id="303:effortlessresponsivenesswithasyncdisplaykitpart3:labinstructions">303: Effortless Responsiveness with AsyncDisplayKit, Part 3: Lab Instructions</h1>
+
+<p>At this point, you have a view controller sizing and displaying a card asynchronously.</p>
+
+<p>However, there are two major features the demo app still needs to spice things up:</p>
+
+<ol>
+<li><strong>A Description</strong>. Showing the image is great, but it would be nice to let the user read a small bit of text describing the image. To save space and to make the text easy to read, the text should display over the image and the image should blur. The key is to display the blurred image immediately in response to touch. It needs to be super responsive.</li>
+<li><strong>More Cards</strong>. Our planet is full of wonders and our users will want to explore more than one. That&#8217;s what collection views are designed to do. In this lab you will use <code>ASCollectionView</code> to place a set of card nodes onto the screen.</li>
+</ol>
+
+<h2 id="displayingthedescriptionoverblur">Displaying the Description over Blur</h2>
+
+<p><img src="./3-LabImages/Lab_1.png" alt="" /> <img src="./3-LabImages/Lab_2.png" alt="" /></p>
+
+<p>You’ll start by setting up the show more button, description text, and blurred image nodes. Open <strong>CardNode.swift</strong></p>
+
+<p>Inside <code>init!(card: Card)</code> in the <strong>Set Up Nodes</strong> section set up the more button and description text nodes:</p>
+
+<pre><code>moreButtonNode.image = moreImage  
+descriptionTextNode.attributedString = NSAttributedString.attributedStringForDescriptionText(card.description)  
+descriptionTextNode.alpha = 0.0
+</code></pre>
+
+<p>Notice that the more button node is actually an image node. More about this further down.</p>
+
+<p>Still in the <strong>Set Up Nodes</strong> section, set up the blurred image node:</p>
+
+<pre><code>blurredImageNode.image = card.image  
+blurredImageNode.imageModificationBlock = blurredImageNode.blurClosure  
+blurredImageNode.alpha = 0.0
+</code></pre>
+
+<p>The <code>imageModificationBlock</code> property is a block/closure that gives you the opportunity to modify the decoded image before AsyncDisplayKit sets the contents of the node&#8217;s corresponding layer. In this case, the property is set to a closure that&#8217;s returned by a helper calculated property in an extension on ASImageNode. The returned closure applies a blur using the accelerate framework. The blur is an expensive operation that can take a long time to complete especially on older hardware (e.g. iPhone 4S / 3rd generation iPad).</p>
+
+<p>Wire the More button in the <strong>Wire Target Action Pairs</strong> section:</p>
+
+<pre><code>moreButtonNode.addTarget(self, action: &quot;handleMoreButtonTap&quot;, forControlEvents: ASControlNodeEvent.TouchUpInside)
+</code></pre>
+
+<p>Because <code>ASImageNode</code> is a subclass of <code>ASControlNode</code>, image nodes can handle touch <code>UIControlEvents</code> out of the box. Super convenient! Notice AsyncDisplayKit has its own control event enumeration type, <code>ASControlNodeEvent</code>. The enumeration is a mirror of all the touch specific cases in <code>UIControlEvents</code>.</p>
+
+<p>Remember that each node can be backed by either a <code>UIView</code> or a <code>CALayer</code>. Also recall that <code>UIView</code> implements touch handling and <code>CALayer</code> does not. <code>CALayer</code> only concerns itself with display. This means <code>UIView</code> backed nodes can handle touch events and <code>CALayer</code> backed nodes cannot. Even though <code>ASImageNode</code> subclasses <code>ASControlNode</code>, a layer backed image node won&#8217;t receive touch events. Best practice is to use view backed nodes for interactive elements and to use layer backed nodes for visual elements.</p>
+
+<p>In the <strong>Build Hierarchy</strong> section, after <code>addSubnode(imageNode)</code> and before <code>addSubnode(titleTextNode)</code>, add the blurred image node:</p>
+
+<pre><code>addSubnode(blurredImageNode)
+</code></pre>
+
+<p>Also in the <strong>Build Hierarchy</strong> section, add the More button and description text nodes to the node hierarchy:</p>
+
+<pre><code>addSubnode(moreButtonNode)  
+addSubnode(descriptionTextNode)
+</code></pre>
+
+<p>Inside <code>calculateSizeThatFits(constrainedSize: CGSize)</code> measure the nodes:</p>
+
+<pre><code>moreButtonNode.measure(cardSize)  
+descriptionTextNode.measure(cardSize.sizeByInsetting(width: 40.0, height: 40.0))
+</code></pre>
+
+<p>Inside <code>layout()</code> frame the nodes:</p>
+
+<pre><code>moreButtonNode.frame = frames.moreButtonFrame  
+blurredImageNode.frame = frames.imageFrame  
+descriptionTextNode.frame = frames.descriptionFrame
+</code></pre>
+
+<p>Implement the <code>showDescription()</code> and <code>hideDescription()</code> methods:</p>
+
+<pre><code>  func showDescription() {  
+    displayDescription = true  
+    if let frames = frameSetOrNil {  
+      UIView.animateWithDuration(0.5) {  
+        self.moreButtonNode.image = self.closeImage  
+        self.blurredImageNode.alpha = 1.0  
+        self.descriptionTextNode.alpha = 1.0  
+      }
+    }  
+  }
+</code></pre>
+
+<p>and</p>
+
+<pre><code>  func hideDescription() {  
+    displayDescription = false  
+    UIView.animateWithDuration(0.5) {  
+      self.moreButtonNode.image = self.moreImage  
+      self.blurredImageNode.alpha = 0.0  
+      self.descriptionTextNode.alpha = 0.0  
+    }
+  }
+</code></pre>
+
+<p>Build and run</p>
+
+<figure>
+<img src="./3-LabImages/Lab_1.png" alt="" />
+</figure>
+
+<h2 id="hidingthebuttonduringblur">Hiding the Button During Blur</h2>
+
+<p>If you&#8217;re running on an older device, you will notice the blur doesn&#8217;t fade in right away. That&#8217;s because the node is busy performing the image blur. Instead of letting the user tap on the more button while the blur is drawing, the card node should hide the more button until the blur is ready for display. On top of that, the title and image nodes should also display together. They should all fade in nicely.</p>
+
+<p>In the <strong>Set Up Nodes</strong> section, set the more button node&#8217;s alpha to 0 to hide it:</p>
+
+<pre><code>moreButtonNode.alpha = 0.0
+</code></pre>
+
+<p>Implement <code>subnodeDisplayWillStart(subnode: ASDisplayNode!)</code>:</p>
+
+<pre><code>  override func subnodeDisplayWillStart(subnode: ASDisplayNode!) {  
+    super.subnodeDisplayWillStart(subnode)  
+    if subnode == blurredImageNode {  
+      moreButtonNode.alpha = 0.0  
+      descriptionTextNode.alpha = 0.0  
+      blurredImageNode.alpha = 0.0  
+    } else if subnode == imageNode {  
+      imageNode.alpha = 0.0  
+      titleTextNode.alpha = 0.0  
+    }
+  }
+</code></pre>
+
+<p>This method gets called whenever a subnode is about to start its display. This is useful because the node can hide the more button whenever the blur node is about to draw. It&#8217;s also useful to hide the title text and image nodes while the main image draws.</p>
+
+<p>Implement <code>subnodeDisplayDidFinish(subnode: ASDisplayNode!)</code>:</p>
+
+<pre><code>  override func subnodeDisplayDidFinish(subnode: ASDisplayNode!) {  
+    super.subnodeDisplayDidFinish(subnode)  
+    if subnode == blurredImageNode {  
+      if displayDescription {  
+          showDescription()  
+      }
+      UIView.animateWithDuration(0.5) {  
+        self.moreButtonNode.alpha = 1.0  
+      }
+    } else if subnode == imageNode {  
+      UIView.animateWithDuration(0.3) {  
+        self.imageNode.alpha = 1.0  
+        self.titleTextNode.alpha = 1.0  
+      }
+    }  
+  }
+</code></pre>
+
+<p>Whenever a subnode completes display, this method is called on the super node. This is useful for presenting the more button once the UI is ready to display responsively. It&#8217;s also important to display the description text if the user already tapped the more button (as you will see later in the collection view). That&#8217;s why <code>showDescription()</code> is called when <code>displayDescription</code> is <code>true</code>.</p>
+
+<p>Build and run. Notice how <em>this</em> time the blur shows up immediately!</p>
+
+<h2 id="morewonders">More Wonders</h2>
+
+<figure>
+<img src="./3-LabImages/Lab_3.png" alt="" />
+</figure>
+
+<p>Open <strong>LabViewController.swift</strong></p>
+
+<p>Add an ASCollectionView constant stored property named <code>collectionView</code>. Give it a new async collection view with flow layout as a default value :</p>
+
+<pre><code>let collectionView = ASCollectionView(frame: CGRectZero, collectionViewLayout: UICollectionViewFlowLayout())
+</code></pre>
+
+<p>ASCollectionView has it&#8217;s own version of <code>UICollectionViewDataSource</code> and <code>UICollectionViewDelegate</code> protocols. The next step is to add methods so that this view controller can conform to ASCollectionView&#8217;s equivalent protocols <code>ASCollectionViewDataSource</code> and <code>ASCollectionViewDelegate</code>.</p>
+
+<p>Implement <code>collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int)</code> by returning the count of <code>cards</code>:</p>
+
+<pre><code>func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {  
+    let count = cards.count  
+    return count  
+}
+</code></pre>
+
+<p>Implement <code>collectionView(collectionView: ASCollectionView!, nodeForItemAtIndexPath indexPath: NSIndexPath!) -&gt; ASCellNode!</code>:</p>
+
+<pre><code>func collectionView(collectionView: ASCollectionView!, nodeForItemAtIndexPath indexPath: NSIndexPath!) -&gt; ASCellNode! {  
+    let card = cards[indexPath.item]  
+    let node = CardNode(card: card)  
+    return node  
+}
+</code></pre>
+
+<p>Notice that nothing is getting dequeued in this method. Unlike UICollectionView, ASCollectionView asks for all of it&#8217;s contents/nodes up front. It does that so it can size every single node beforehand. This provides for an extremely snappy <code>layoutAttributesForElementsInRect</code> which is key for achieving 60 frames per second while scrolling.</p>
+
+<p>Now that the view controller implements all the required methods in <code>ASCollectionViewDataSource</code> (<code>ASCollectionViewDelegate</code> has none), annotate the view controller as conforming to both protocols:</p>
+
+<pre><code>class LabViewController: UIViewController, ASCollectionViewDataSource, ASCollectionViewDelegate
+</code></pre>
+
+<p>In <code>viewDidLoad()</code> set the collection view&#8217;s <code>asyncDataSource</code> and <code>asyncDelegate</code> properties to the view controller:</p>
+
+<pre><code>collectionView.asyncDataSource = self  
+collectionView.asyncDelegate = self
+</code></pre>
+
+<p>Still in <code>viewDidLoad()</code>, set the range tuning parameters to half screenfull&#8217;s leading and trailing:</p>
+
+<pre><code>collectionView.rangeTuningParameters = ASRangeTuningParameters(leadingBufferScreenfuls: 0.5, trailingBufferScreenfuls: 0.5)
+</code></pre>
+
+<p><code>ASCollectionView</code> uses <code>ASRangeController</code> under the hood in order to draw nodes further ahead in the collection view so that by the time the user scrolls to those nodes, they are ready for display. It&#8217;s one of the major reasons to use <code>ASCollectionView</code>. For this lab, the range has to be tuned to smaller values otherwise the collection view would trigger too many blur operations all at once and the app would run out of memory fairly quickly.</p>
+
+<p>Still in <code>viewDidLoad()</code>, add the collection view to the view controller&#8217;s root view:</p>
+
+<pre><code>view.addSubview(collectionView)
+</code></pre>
+
+<p>In <code>viewWillLayoutSubviews()</code>, set the collection view&#8217;s content inset so that the last cell is entirely visible over the tab bar:</p>
+
+<pre><code>collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom:bottomLayoutGuide.length, right:0)
+</code></pre>
+
+<p>Last step is to frame the collection view. The collection view should fill the view controller&#8217;s root view. Continuing in <code>viewWillLayoutSubviews()</code> frame the collection view:</p>
+
+<pre><code>collectionView.frame = view.bounds
+</code></pre>
+
+<p>Voila! Build and run. Yes, it&#8217;s that easy to take an ASDisplayNode subclass and make a collection view. Note that the CardNode we built during the demo was already subclassed as ASCellNode so that we could just pop it into an ASCollectionView.</p>
+
+<figure>
+<img src="./3-LabImages/Lab_3.png" alt="" />
+</figure>
+
+<p>Congratulations, you&#8217;re users are ready to explore our world&#8217;s wonders, responsively! You’re ready to continue on to the challenge, where you’ll take the existing CardNode and implement a new layout. In the new layout, the height of the cards should be calculated based on the amount of space the description text fills.</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>

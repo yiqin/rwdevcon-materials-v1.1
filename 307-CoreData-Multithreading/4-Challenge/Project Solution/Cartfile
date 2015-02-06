@@ -1,0 +1,4 @@
+github "Quick/Quick"
+github "Quick/Nimble"
+github "thoughtbot/Argo"
+github "casademora/Swell"

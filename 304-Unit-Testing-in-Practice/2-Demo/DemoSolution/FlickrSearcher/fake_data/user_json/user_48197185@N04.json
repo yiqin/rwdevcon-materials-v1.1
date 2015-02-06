@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "48197185@N04",
+    "path_alias" : null,
+    "description" : {
+      "_content" : ""
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/48197185@N04\/"
+    },
+    "nsid" : "48197185@N04",
+    "realname" : {
+      "_content" : "Esther Vinju"
+    },
+    "ispro" : 1,
+    "iconserver" : "5554",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : "Weesp, nl"
+    },
+    "username" : {
+      "_content" : "Esther Vinju Photography"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=48165046"
+    },
+    "timezone" : {
+      "label" : "Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+      "offset" : "+01:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2008-01-06 02:55:41"
+      },
+      "firstdate" : {
+        "_content" : "1330867830"
+      },
+      "count" : {
+        "_content" : 1829
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/48197185@N04\/"
+    },
+    "iconfarm" : 6
+  }
+}

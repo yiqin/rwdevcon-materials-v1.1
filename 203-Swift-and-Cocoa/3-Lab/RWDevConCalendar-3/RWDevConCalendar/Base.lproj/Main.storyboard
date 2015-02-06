@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t0p-SF-EIA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iQ4-6D-GBk">
+            <objects>
+                <collectionViewController id="ZgG-Zt-nWq" customClass="ViewController" customModule="RWDevConCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="aRY-Yf-ZhM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WqY-rg-JR6">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="ZgG-Zt-nWq" id="VQY-En-avF"/>
+                            <outlet property="delegate" destination="ZgG-Zt-nWq" id="wBG-c7-WRm"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="M0m-AQ-f2r"/>
+                    <connections>
+                        <segue destination="ndp-KB-etZ" kind="show" identifier="PresentSession" id="Dn3-oD-mg7"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rtg-Ln-QSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3065" y="63"/>
+        </scene>
+        <!--Session View Controller-->
+        <scene sceneID="hwS-TP-aqh">
+            <objects>
+                <viewController id="ndp-KB-etZ" customClass="SessionViewController" customModule="RWDevConCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="948-fe-605"/>
+                        <viewControllerLayoutGuide type="bottom" id="uYV-4X-fc2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kC9-gv-VE4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-hl-gNu">
+                                <rect key="frame" x="16" y="72" width="58.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rx-Ie-GAI">
+                                <rect key="frame" x="16" y="106" width="53.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmt-de-55l">
+                                <rect key="frame" x="16" y="131" width="31.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-Ik-Ymx">
+                                <rect key="frame" x="16" y="156" width="87.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kmt-de-55l" firstAttribute="leading" secondItem="kC9-gv-VE4" secondAttribute="leadingMargin" id="6VF-Iv-xx4"/>
+                            <constraint firstItem="8Rx-Ie-GAI" firstAttribute="top" secondItem="hNB-hl-gNu" secondAttribute="bottom" constant="8" id="K5r-DX-Ajf"/>
+                            <constraint firstItem="hNB-hl-gNu" firstAttribute="top" secondItem="948-fe-605" secondAttribute="bottom" constant="8" id="RXT-9h-OJv"/>
+                            <constraint firstItem="kmt-de-55l" firstAttribute="top" secondItem="8Rx-Ie-GAI" secondAttribute="bottom" constant="8" id="XHE-Kj-xhw"/>
+                            <constraint firstItem="pVp-Ik-Ymx" firstAttribute="leading" secondItem="kC9-gv-VE4" secondAttribute="leadingMargin" id="dua-SV-fUz"/>
+                            <constraint firstItem="8Rx-Ie-GAI" firstAttribute="leading" secondItem="kC9-gv-VE4" secondAttribute="leadingMargin" id="fRj-Ta-QWQ"/>
+                            <constraint firstItem="hNB-hl-gNu" firstAttribute="leading" secondItem="kC9-gv-VE4" secondAttribute="leadingMargin" id="iAh-CQ-IVs"/>
+                            <constraint firstItem="pVp-Ik-Ymx" firstAttribute="top" secondItem="kmt-de-55l" secondAttribute="bottom" constant="8" id="jaf-5P-Mzb"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hNB-hl-gNu" secondAttribute="trailing" id="tMb-LB-RTR"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="pVp-Ik-Ymx" secondAttribute="trailing" id="vef-f5-LOk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="pVp-Ik-Ymx" id="Df5-2Y-fzH"/>
+                        <outlet property="speakerLabel" destination="8Rx-Ie-GAI" id="sQB-qL-HHf"/>
+                        <outlet property="timeLabel" destination="kmt-de-55l" id="mUt-j7-ch5"/>
+                        <outlet property="titleLabel" destination="hNB-hl-gNu" id="iMW-ds-x1d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1Q-gm-TfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3793" y="63"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gf6-5m-ihY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t0p-SF-EIA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="iYD-nV-XwS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o6x-fD-9BS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZgG-Zt-nWq" kind="relationship" relationship="rootViewController" id="6BS-gO-xnB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZq-Kb-gxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253" y="63"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8E8AD0F1-405E-4ED4-96C4-5A47E3D1708D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DropCharge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F71A2667ED7A6E8102A95A0C14CA67E196B4F7BE</key>
+		<string>github.com:rwenderlich/dropcharge.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>4-Challenge/DropCharge-4A/DropCharge.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F71A2667ED7A6E8102A95A0C14CA67E196B4F7BE</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:rwenderlich/dropcharge.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F71A2667ED7A6E8102A95A0C14CA67E196B4F7BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F71A2667ED7A6E8102A95A0C14CA67E196B4F7BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DropCharge</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "26343166@N00",
+    "path_alias" : "doggo",
+    "description" : {
+      "_content" : "<a href=\"http:\/\/www.doggo.net\" rel=\"nofollow\">www.doggo.net<\/a>"
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/doggo\/"
+    },
+    "nsid" : "26343166@N00",
+    "realname" : {
+      "_content" : "doggo"
+    },
+    "ispro" : 1,
+    "iconserver" : "17",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : "Evanston"
+    },
+    "username" : {
+      "_content" : "doggo"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=55505"
+    },
+    "timezone" : {
+      "label" : "Central Time (US & Canada)",
+      "offset" : "-06:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2002-01-30 09:00:23"
+      },
+      "firstdate" : {
+        "_content" : "1111899692"
+      },
+      "count" : {
+        "_content" : 262
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/doggo\/"
+    },
+    "iconfarm" : 1
+  }
+}

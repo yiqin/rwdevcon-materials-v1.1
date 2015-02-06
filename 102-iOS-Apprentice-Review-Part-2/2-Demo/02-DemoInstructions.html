@@ -1,0 +1,232 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>02-DemoInstructions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;margin:30px 0 0;padding:0;background:#fff}#wrapper{padding:20px}li{font-size:110%}li li{font-size:100%}li p{font-size:100%;margin:.5em 0}h1{color:#000}h2{color:#111}h3{color:#111;margin:0}h4{color:#111}h5{color:#111}h6{font-size:1em;line-height:1.5em;margin:1.5em 0}body,p,td,div{color:#111;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;word-wrap:break-word}a{color:#0d6ea1;text-decoration:none;-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;-ms-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}a:hover{color:#3593d9}body{font-size:15px;line-height:21px;margin:0 auto}h1{font-size:37px;line-height:42px;margin-top:42px;margin-bottom:21px}h2{font-size:27px;line-height:42px;margin-top:42px;margin-bottom:21px}h3{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}h4{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}p,ul,ol,pre,table,blockquote{margin-top:21px;margin-bottom:21px}hr{border:1px solid;margin:-1px 0}ul ul,ol ol,ul ol,ol ul{margin-top:0;margin-bottom:0}b,strong,em,small,code{line-height:1}.footnote{color:#0d6ea1;font-size:.8em;vertical-align:super}abbr,acronym{border-bottom:1px dotted #aaa}#wrapper img{max-width:100%;height:auto}dd{font-size:1em;margin-bottom:1em}li>p:first-child{margin:0}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{border:1px solid rgba(0,0,0,0.25);border-collapse:collapse;display:table;empty-cells:hide;margin:-1px 0 1.3125em;padding:0;table-layout:fixed}caption{display:table-caption;font-weight:700}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}tr{display:table-row}table th,table td{font-size:1.1em;line-height:1.3;padding:.5em 1em 0}table thead{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tbody{background:rgba(0,0,0,0.05)}table tfoot{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{display:inline-block;overflow:hidden;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#666}.poetry pre{display:block;font-family:Georgia,Garamond,serif !important;font-size:110% !important;font-style:italic;line-height:1.6em;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}blockquote p{font-size:110%;font-style:italic;line-height:1.6em}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;position:relative;vertical-align:super}sub{vertical-align:sub;top:-1px}p,h5{font-size:1.1429em;line-height:1.3125em;margin:1.3125em 0}dt,th{font-weight:700}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(200,200,200,0.25)}@media print{img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;color:#303030;padding:10px;position:relative;text-indent:0}}@media screen{.inverted{background:#252a2a}.inverted #wrapper{background:#252a2a;color:#eee}.inverted hr{border-color:#333f40 !important}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dt,.inverted dd{color:#eee}.inverted pre{background:#ccc}.inverted pre code{color:#111}.inverted table{background:none}.inverted table tr:nth-child(odd),.inverted table td:nth-child(odd){background:none}.inverted a{color:#acd1d5}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}}
+
+@media print{
+#generated-toc-clone,#generated-toc{display:none!important}
+}
+#generated-toc-clone li.missing,#mkreplaced-toc li.missing{list-style-type:none!important}#generated-toc-clone li, #mkreplaced-toc li{list-style-type:upper-roman}#generated-toc-clone li li, #mkreplaced-toc li li{list-style-type:decimal}#generated-toc-clone li li li,#mkreplaced-toc li li li{list-style-type:decimal-leading-zero}#generated-toc-clone li li li li,#mkreplaced-toc li li li li{list-style-type:lower-greek}#generated-toc-clone li li li li li,#mkreplaced-toc li li li li li{list-style-type:disc}#generated-toc-clone li li li li li li,#mkreplaced-toc li li li li li li{list-style-type:square}
+</style>
+
+</head>
+<body class="normal">
+  <div id="wrapper">
+      <h1 id="iosapprenticereview2part2:demoinstructions">iOS Apprentice Review 2 Part 2: Demo Instructions</h1>
+
+<h2 id="part1:creatingthemodel">Part 1: Creating the Model</h2>
+
+<p>In this demo, you will convert the Story Time app to use to use MVC as well as create additional view controllers</p>
+
+<h3 id="step1:createthestoryfile">Step 1: Create the Story File</h3>
+
+<p>With the project StoryTime project open, select <strong>File / Swift File</strong>. Give it the name <strong>Story.swift</strong></p>
+
+<h3 id="step2:definethestorytypes">Step 2: Define the Story types</h3>
+
+<p>At the top of the file, add the following code to designate the two types of stories. Place this at the top of the file</p>
+
+<pre><code>enum StoryType {  
+   case zombies, vampires  
+}</code></pre>
+
+<h3 id="step3:createthestoryclass">Step 3: Create the Story class</h3>
+
+<p>Create the class to contain the story object. </p>
+
+<pre><code>class Story {  
+  var title : String  
+  var name : String?  
+  var verb : String?  
+  var number : Int?  
+  var winStory: String?  
+  var loseStory: String?  
+  var type: StoryType  
+}
+</code></pre>
+
+<h3 id="step4:addtheinitializer">Step 4: Add the initializer</h3>
+
+<p>Add <code>init()</code> just underneath all of the properties. Compiler errors, begone!</p>
+
+<pre><code>init(title: String, winStory:String, loseStory: String, type: StoryType) {  
+  self.title = title  
+  self.winStory = winStory  
+  self.loseStory = loseStory  
+  self.type = type  
+}</code></pre>
+
+<h3 id="step5:addhelpermethods">Step 5: Add Helper Methods</h3>
+
+<p>In the project, open the file named: <strong>codex.txt</strong>. Copy both <code>generateStory(monstersWin:)</code> and <code>replaceText(text:,withText:,inString:)</code> into the <code>Story</code> class.</p>
+
+<h2 id="part2:updatingtheview">Part 2: Updating the View</h2>
+
+<p>With the model set up, it’s time to update the view to add an additional view controller to list all the stories</p>
+
+<h3 id="step1:addanewviewcontroller">Step 1: Add a New View Controller</h3>
+
+<p>In your view controller, open <strong>Main.Storyboard</strong>. In your <strong>Object Library</strong>, find a View Controller and drag it onto the scene.</p>
+
+<h3 id="step2:addatableviewontothecontroller">Step 2: Add a Table View onto the Controller</h3>
+
+<p>While you can always use a Table View Controller to do the same thing, it’s just as important to understand how to configure Table Views. </p>
+
+<p>Drag a Table View from the Object Library onto your new View Controller.</p>
+
+<h3 id="step3:addtheconstraints">Step 3: Add the Constraints</h3>
+
+<p>Select the <strong>Table View</strong>, then click the <strong>Pin</strong> button. Make sure to uncheck <strong>“Constrain to margins”</strong> and select all the neighboring constraints. Set them to <strong>0</strong>.</p>
+
+<h3 id="step4:addacell">Step 4: Add a Cell</h3>
+
+<p>From the Object Library, drag a Table View Cell into the Table View. </p>
+
+<h3 id="step5:configurethecellandtableview">Step 5: Configure the Cell and Table View</h3>
+
+<p>Select the cell. In the Attributes Inspector, search for the Identifier field. Provide the name: <strong>“StoryTimeCell”</strong>.</p>
+
+<p>Next, select the Table View and in the Attributes Inspector, set the style to be <strong>Grouped</strong>.</p>
+
+<h3 id="step6:createtheviewcontrollerclass">Step 6: Create the View Controller Class</h3>
+
+<p>From the menu, select <strong>File / New*. Under iOS, select </strong>Source<strong>. Choose </strong>Cocoa Touch Class<strong>, click </strong>Next<strong>. Name the file </strong>“StorySelectionViewController”<strong>. Make it a subclass of </strong>UIViewController<strong>. Click </strong>Next<strong>, then </strong>Create**.</p>
+
+<p>Open <strong>StorySelectionViewController.swift</strong>, and change the class definition to look like the following:</p>
+
+<pre><code>class StorySelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {</code></pre>
+
+<h3 id="step7:provideanidentity">Step 7: Provide an Identity</h3>
+
+<p>Return back to your storyboard. Select your new View Controller, and select the Identity Inspector. From the class dropdown, select <strong>StorySelectionViewController</strong>.</p>
+
+<h3 id="step8:setupthedelegateandthedatasource">Step 8: Setup the Delegate and the Data Source</h3>
+
+<p>Finally, setup your delegate and data source by right clicking or control clicking the Table View. From the dialog pop-up, first drag the <strong>dataSource</strong> to the owning <strong>View Controller</strong>. Next, do the same to <strong>delegate</strong> and the <strong>dataSource</strong>. </p>
+
+<h3 id="step9:createanoutletforthetableview">Step 9: Create an outlet for the Table View</h3>
+
+<p>Select the <strong>Table View</strong>, open the <strong>Assistant Editor</strong>, and control drag to the code to create a new <strong>IBOutlet</strong>. Name the new outlet: <strong>tableView</strong>.</p>
+
+<h2 id="part3:mvcrealized">Part 3: MVC Realized</h2>
+
+<p>At this point, you have a view to show your data, a model to contain your data, and a controller to manage the both of them. In this following section, you will put them all together.</p>
+
+<h3 id="step1:settingupthemodel">Step 1: Setting up the Model</h3>
+
+<p>At this point, you will create two arrays to store the model objects. Typically, you would use just one array, but for this demonstration, you will use two of them to understand how tableViews work in practice.</p>
+
+<p>Open <strong>StorySelectionViewController.swift</strong>. At the top of the class, just underneath the newly created IBOutlet, add the following:</p>
+
+<pre><code>var zombieStories: [Story]!  
+var vampireStories: [Story]!</code></pre>
+
+<h3 id="step2:creatingthemodelobjects">Step 2: Creating the Model Objects</h3>
+
+<p>At the following inside of <code>viewDidLoad()</code>:</p>
+
+<pre><code>override func viewDidLoad() {  
+  super.viewDidLoad()  
+  zombieStories = [Story]()  
+  vampireStories = [Story]()  
+  title = &quot;Story Time!&quot;  
+}
+</code></pre>
+
+<p>Next, open <strong>code.txt</strong>, and copy the code for <strong>StorySelectionViewController.swift</strong> and paste it under the previous code in <code>viewDidLoad()</code>.This code actually creates each individual story.</p>
+
+<p>Finally, add this bit of code underneath the pasted code:</p>
+
+<pre><code>zombieStories.append(zombieStory)  
+vampireStories.append(vampireStory)</code></pre>
+
+<h3 id="step3:settingupthetableview">Step 3: Setting up the Table View</h3>
+
+<p>First, set the amount of sections.</p>
+
+<pre><code>func numberOfSectionsInTableView(tableView: UITableView) -&gt; Int {  
+  return 2  
+}
+</code></pre>
+
+<p>Second, let the table how many rows for each section.</p>
+
+<pre><code>func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {  
+    switch(section)  {  
+        case 0:  
+            return zombieStories.count  
+        case 1:  
+            return vampireStories.count  
+        default:  
+            return 0  
+   }}</code></pre>
+
+<p>Third, give each of the sections a title.</p>
+
+<pre><code>func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -&gt; String? {  
+  if section == 0 {  
+    return &quot;Zombie Stories&quot;  
+  }  return &quot;Vampire Stories&quot;  
+}
+</code></pre>
+
+<p>Finally, create the cells.</p>
+
+<pre><code>func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell {  
+    let cell = tableView.dequeueReusableCellWithIdentifier(&quot;StoryTimeCell&quot;, forIndexPath: indexPath) as UITableViewCell  
+    var story: Story!  
+    if indexPath.section == 0 {  
+        story = zombieStories[indexPath.row] as Story  
+    } else {  
+        story = vampireStories[indexPath.row] as Story  
+    }    cell.textLabel?.text = story.title  
+    return cell  
+}</code></pre>
+
+<h2 id="part4:puttingitalltogether">Part 4: Putting It All Together</h2>
+
+<p>Now that your new view controller is completed, it’s time to put them all together.</p>
+
+<h3 id="step1:reconfiguringthestoryboard">Step 1: Reconfiguring the Storyboard</h3>
+
+<p>First, control click the cell and drag over to the existing View Controller.</p>
+
+<p>Select <strong>Show</strong> from the list of options.</p>
+
+<p>Next, select the newly created segue, and in the Attributes Inspector, give it the Identifier: <strong>GenerateStory</strong>.</p>
+
+<p>Set your new View Controller to be the initial View Controller by dragging the Storyboard Entry Point (the arrow) to your View Controller.</p>
+
+<p>Lastly, select the <strong>StorySelectionViewController</strong> and from the menu, select <strong>Editor / Embed In / Navigation Controller</strong>. Your storyboard should look like the following:</p>
+
+<h3 id="step2:setuptheexistingviewcontrollertouseyourmodel">Step 2: Setup the Existing View Controller to Use Your Model</h3>
+
+<p>Open <strong>ViewController.swift</strong> and look for all the comments that say the following:</p>
+
+<pre><code>// UNCOMMENT OUT CODE</code></pre>
+
+<p>Uncomment all those blocks of code.</p>
+
+<h3 id="step3:passthedatabetweenyourviewcontrollers">Step 3: Pass the Data between your View Controllers</h3>
+
+<p>Finally, pass the Story object between View Controllers. Open <strong>StorySelectionViewController.swift</strong> and add the following code.</p>
+
+<pre><code>override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {  
+    if segue.identifier == &quot;GenerateStory&quot; {  
+        if let indexPath = tableView.indexPathForSelectedRow() {  
+            let storyViewController = segue.destinationViewController as ViewController  
+            if indexPath.section == 0 {  
+                storyViewController.currentStory = zombieStories[indexPath.row] as Story  
+            } else {  
+                storyViewController.currentStory = vampireStories[indexPath.row] as Story  
+            }        }  
+    }}</code></pre>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>

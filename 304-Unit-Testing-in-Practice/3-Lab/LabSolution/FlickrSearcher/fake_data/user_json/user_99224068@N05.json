@@ -1,0 +1,41 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "99224068@N05",
+    "path_alias" : null,
+    "description" : {
+      "_content" : ""
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/99224068@N05\/"
+    },
+    "nsid" : "99224068@N05",
+    "ispro" : 0,
+    "iconserver" : "2846",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : ""
+    },
+    "username" : {
+      "_content" : "bluelanterne"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=99218728"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2010-07-14 21:54:02"
+      },
+      "firstdate" : {
+        "_content" : "1374486892"
+      },
+      "count" : {
+        "_content" : 509
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/99224068@N05\/"
+    },
+    "iconfarm" : 3
+  }
+}

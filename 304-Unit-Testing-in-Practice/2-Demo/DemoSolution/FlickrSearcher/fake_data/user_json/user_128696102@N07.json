@@ -1,0 +1,44 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "128696102@N07",
+    "path_alias" : "ericoak",
+    "description" : {
+      "_content" : ""
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/ericoak\/"
+    },
+    "nsid" : "128696102@N07",
+    "realname" : {
+      "_content" : "Eric Oak"
+    },
+    "ispro" : 0,
+    "iconserver" : "3936",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : ""
+    },
+    "username" : {
+      "_content" : "ericoak"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=128674772"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2014-10-04 21:13:36"
+      },
+      "firstdate" : {
+        "_content" : "1413481582"
+      },
+      "count" : {
+        "_content" : 100
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/ericoak\/"
+    },
+    "iconfarm" : 4
+  }
+}

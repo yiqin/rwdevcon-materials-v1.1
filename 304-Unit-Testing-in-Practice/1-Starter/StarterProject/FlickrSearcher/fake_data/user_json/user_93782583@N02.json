@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "93782583@N02",
+    "path_alias" : "gyvunupaieskalt",
+    "description" : {
+      "_content" : "<a href=\"http:\/\/www.gyvunupaieska.lt\" rel=\"nofollow\">Cats &amp; dogs for adoption in Lithuania \/ Dovanojamų, rastų ir dingusių gyvūnų skelbimai<\/a>"
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/gyvunupaieskalt\/"
+    },
+    "nsid" : "93782583@N02",
+    "realname" : {
+      "_content" : "Gyvunupaieska Lt"
+    },
+    "ispro" : 0,
+    "iconserver" : "8522",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : "Vilnius, Lithuania"
+    },
+    "username" : {
+      "_content" : "Gyvunupaieska.lt"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=93762235"
+    },
+    "timezone" : {
+      "label" : "Pacific Time (US & Canada); Tijuana",
+      "offset" : "-08:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2013-03-05 10:10:13"
+      },
+      "firstdate" : {
+        "_content" : "1362507013"
+      },
+      "count" : {
+        "_content" : 25088
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/gyvunupaieskalt\/"
+    },
+    "iconfarm" : 9
+  }
+}

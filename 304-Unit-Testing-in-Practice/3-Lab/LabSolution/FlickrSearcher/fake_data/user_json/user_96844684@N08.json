@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "96844684@N08",
+    "path_alias" : null,
+    "description" : {
+      "_content" : ""
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/96844684@N08\/"
+    },
+    "nsid" : "96844684@N08",
+    "realname" : {
+      "_content" : ""
+    },
+    "ispro" : 0,
+    "iconserver" : "3891",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : "Natchez, MS, USA"
+    },
+    "username" : {
+      "_content" : "hjm81631"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=96751871"
+    },
+    "timezone" : {
+      "label" : "Central Time (US & Canada)",
+      "offset" : "-06:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2008-07-14 21:24:48"
+      },
+      "firstdate" : {
+        "_content" : "1371002245"
+      },
+      "count" : {
+        "_content" : 398
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/96844684@N08\/"
+    },
+    "iconfarm" : 4
+  }
+}

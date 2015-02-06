@@ -1,0 +1,158 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>2-Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;margin:30px 0 0;padding:0;background:#fff}#wrapper{padding:20px}li{font-size:110%}li li{font-size:100%}li p{font-size:100%;margin:.5em 0}h1{color:#000}h2{color:#111}h3{color:#111;margin:0}h4{color:#111}h5{color:#111}h6{font-size:1em;line-height:1.5em;margin:1.5em 0}body,p,td,div{color:#111;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;word-wrap:break-word}a{color:#0d6ea1;text-decoration:none;-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;-ms-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}a:hover{color:#3593d9}body{font-size:15px;line-height:21px;margin:0 auto}h1{font-size:37px;line-height:42px;margin-top:42px;margin-bottom:21px}h2{font-size:27px;line-height:42px;margin-top:42px;margin-bottom:21px}h3{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}h4{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}p,ul,ol,pre,table,blockquote{margin-top:21px;margin-bottom:21px}hr{border:1px solid;margin:-1px 0}ul ul,ol ol,ul ol,ol ul{margin-top:0;margin-bottom:0}b,strong,em,small,code{line-height:1}.footnote{color:#0d6ea1;font-size:.8em;vertical-align:super}abbr,acronym{border-bottom:1px dotted #aaa}#wrapper img{max-width:100%;height:auto}dd{font-size:1em;margin-bottom:1em}li>p:first-child{margin:0}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{border:1px solid rgba(0,0,0,0.25);border-collapse:collapse;display:table;empty-cells:hide;margin:-1px 0 1.3125em;padding:0;table-layout:fixed}caption{display:table-caption;font-weight:700}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}tr{display:table-row}table th,table td{font-size:1.1em;line-height:1.3;padding:.5em 1em 0}table thead{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tbody{background:rgba(0,0,0,0.05)}table tfoot{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{display:inline-block;overflow:hidden;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#666}.poetry pre{display:block;font-family:Georgia,Garamond,serif !important;font-size:110% !important;font-style:italic;line-height:1.6em;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}blockquote p{font-size:110%;font-style:italic;line-height:1.6em}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;position:relative;vertical-align:super}sub{vertical-align:sub;top:-1px}p,h5{font-size:1.1429em;line-height:1.3125em;margin:1.3125em 0}dt,th{font-weight:700}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(200,200,200,0.25)}@media print{img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;color:#303030;padding:10px;position:relative;text-indent:0}}@media screen{.inverted{background:#252a2a}.inverted #wrapper{background:#252a2a;color:#eee}.inverted hr{border-color:#333f40 !important}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dt,.inverted dd{color:#eee}.inverted pre{background:#ccc}.inverted pre code{color:#111}.inverted table{background:none}.inverted table tr:nth-child(odd),.inverted table td:nth-child(odd){background:none}.inverted a{color:#acd1d5}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}}
+
+@media print{
+#generated-toc-clone,#generated-toc{display:none!important}
+}
+#generated-toc-clone li.missing,#mkreplaced-toc li.missing{list-style-type:none!important}#generated-toc-clone li, #mkreplaced-toc li{list-style-type:upper-roman}#generated-toc-clone li li, #mkreplaced-toc li li{list-style-type:decimal}#generated-toc-clone li li li,#mkreplaced-toc li li li{list-style-type:decimal-leading-zero}#generated-toc-clone li li li li,#mkreplaced-toc li li li li{list-style-type:lower-greek}#generated-toc-clone li li li li li,#mkreplaced-toc li li li li li{list-style-type:disc}#generated-toc-clone li li li li li li,#mkreplaced-toc li li li li li li{list-style-type:square}
+</style>
+
+</head>
+<body class="normal">
+  <div id="wrapper">
+      <h1 id="303:effortlessresponsivenesswithasyncdisplaykitpart2:demoinstructions">303: Effortless Responsiveness with AsyncDisplayKit, Part 2: Demo Instructions</h1>
+
+<p>In this demo, you will build an asynchronous UI and you will take the first step in mastering AsyncDisplayKit.<br/>
+The steps here will be explained in the demo, but here are the raw steps in case you miss a step or get stuck.</p>
+
+<h2 id="0howtosetupaprojectalreadycompletedinproject">0) How to Set Up a Project <em>(Already Completed in Project)</em></h2>
+
+<p>Create Xcode Project</p>
+
+<p>Include AsyncDisplayKit via CocoaPods</p>
+
+<p>Open Workspace and add bridging header</p>
+
+<p>In the briding header, import &lt;AsyncDisplayKit/AsyncDisplayKit.h&gt;</p>
+
+<h2 id="1displaynodeonscreen">1) Display node on screen</h2>
+
+<p>Instantiate an image node inside of <code>viewDidLoad()</code> in <strong>DemoViewController.swift</strong>:</p>
+
+<pre><code>let imageNode = ASImageNode()
+</code></pre>
+
+<p>Provide an image for the node:</p>
+
+<pre><code>imageNode.image = UIImage(named:&quot;0&quot;)
+</code></pre>
+
+<p>Measure the node&#8217;s size <em>(use the screen size as the constrained size)</em>:</p>
+
+<pre><code>imageNode.measure(UIScreen.mainScreen().bounds.size)
+</code></pre>
+
+<p>Frame the node at 0,0 <em>(upper left-hand corner)</em>:</p>
+
+<pre><code>imageNode.frame = CGRect(origin: CGPointZero, size: imageNode.calculatedSize)
+</code></pre>
+
+<p>Add the node&#8217;s view to the view controller&#8217;s root view:</p>
+
+<pre><code>self.view.addSubview(imageNode.view)
+</code></pre>
+
+<p>Build and run</p>
+
+<h2 id="2explorehowthisisbetterthanuikit">2) Explore how this is better than UIKit</h2>
+
+<p>Before measuring, give the node an image modification closure that has a two second sleep:</p>
+
+<pre><code>imageNode.imageModificationBlock = { originalImage in  
+  sleep(2)  
+  return originalImage  
+}
+</code></pre>
+
+<p>Build and run, notice how this doesn&#8217;t block the main thread</p>
+
+<p>Place a 1 second sleep command after the line that measures the node:</p>
+
+<pre><code>sleep(1)
+</code></pre>
+
+<p>Build and run, notice how this <em>does</em> block the main thread</p>
+
+<p>Wrap all the lines inside of a dispatch async to a background queue:</p>
+
+<pre><code>dispatch_async(dispatch_queue_t.backgroundQueue) {  
+  let imageNode = ASImageNode()  
+  imageNode.image = UIImage(named:&quot;0&quot;)  
+  imageNode.imageModificationBlock = { originalImage in  
+    sleep(2)  
+    return originalImage  
+  }
+  sleep(1)  
+  imageNode.measure(UIScreen.mainScreen().bounds.size)  
+  imageNode.frame = CGRect(origin: CGPointZero, size: imageNode.calculatedSize)  
+  self.view.addSubview(imageNode.view)  
+}
+</code></pre>
+
+<p>Wrap the line that adds the image node&#8217;s view inside of a dispatch async to the main queue:</p>
+
+<pre><code>dispatch_async(dispatch_get_main_queue()) {  
+    self.view.addSubview(imageNode.view)  
+}
+</code></pre>
+
+<p>Build and run, notice how the app no longer takes time to open</p>
+
+<h2 id="3buildnodehierarchy">3) Build node hierarchy</h2>
+
+<p>Delete the outer dispatch async including all it&#8217;s contents.</p>
+
+<p>Open <strong>CardNode.swift</strong> and give tour</p>
+
+<p>Inside <code>init!(card: Card)</code> in the <strong>Set Up Nodes</strong> section give the title text node an attributed string:</p>
+
+<pre><code>titleTextNode.attributedString = NSAttributedString.attributedStringForTitleText(card.name)
+</code></pre>
+
+<p>At the end of the ** Build Hierarchy** section, add the title text node as a subnode:</p>
+
+<pre><code>addSubnode(titleTextNode)
+</code></pre>
+
+<p>Inside <code>calculateSizeThatFits(constrainedSize: CGSize)</code> use the card size to measure the title text node:</p>
+
+<pre><code>titleTextNode.measure(cardSize)
+</code></pre>
+
+<p>Inside <code>layout()</code> frame the title text node using the frame set:</p>
+
+<pre><code>titleTextNode.frame = frames.titleFrame
+</code></pre>
+
+<p>That&#8217;s all we need to add the title on top of the image. Go back to <strong>DemoViewController.swift</strong></p>
+
+<p>Instantiate, set up, measure, frame and add a CardNode to the screen:</p>
+
+<pre><code> dispatch_async(dispatch_queue_t.backgroundQueue) {  
+  let node = CardNode(card: card)  
+  node.measure(UIScreen.mainScreen().bounds.size)  
+  let origin = UIScreen.mainScreen().bounds.originForCenteredRectWithSize(node.calculatedSize)  
+  node.frame = CGRect(origin: origin, size: node.calculatedSize)
+
+  dispatch_async(dispatch_get_main_queue()) {  
+    self.view.addSubview(node.view)  
+  }
+}
+</code></pre>
+
+<p>Build and run</p>
+
+<h2 id="6thatsit">6) That&#8217;s it!</h2>
+
+<p>Congrats, at this time you should have an asynchronous display UI, and learned a lot about the basics of AsyncDisplayKit along the way! You are ready to move on to the lab.</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>

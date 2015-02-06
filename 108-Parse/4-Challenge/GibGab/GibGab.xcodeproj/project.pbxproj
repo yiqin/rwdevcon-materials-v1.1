@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1426C30F1A3AE2DC0009E6C4 /* NewGabReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426C30E1A3AE2DC0009E6C4 /* NewGabReplyViewController.swift */; };
+		14B490D91A3AAA2700A3E426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B490D81A3AAA2700A3E426 /* AppDelegate.swift */; };
+		14B490DB1A3AAA2700A3E426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B490DA1A3AAA2700A3E426 /* ViewController.swift */; };
+		14B490DE1A3AAA2700A3E426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B490DC1A3AAA2700A3E426 /* Main.storyboard */; };
+		14B490FA1A3AAA4C00A3E426 /* rwdevcon-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B490F81A3AAA4C00A3E426 /* rwdevcon-bg.png */; };
+		14B490FB1A3AAA4C00A3E426 /* rwdevcon-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B490F91A3AAA4C00A3E426 /* rwdevcon-logo.png */; };
+		14B491121A3AAB9700A3E426 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B491061A3AAB9700A3E426 /* Accounts.framework */; };
+		14B491131A3AAB9700A3E426 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B491071A3AAB9700A3E426 /* AudioToolbox.framework */; };
+		14B491141A3AAB9700A3E426 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B491081A3AAB9700A3E426 /* CFNetwork.framework */; };
+		14B491151A3AAB9700A3E426 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B491091A3AAB9700A3E426 /* CoreGraphics.framework */; };
+		14B491161A3AAB9700A3E426 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4910A1A3AAB9700A3E426 /* CoreLocation.framework */; };
+		14B491171A3AAB9700A3E426 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4910B1A3AAB9700A3E426 /* libz.dylib */; };
+		14B491181A3AAB9700A3E426 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4910C1A3AAB9700A3E426 /* MobileCoreServices.framework */; };
+		14B491191A3AAB9700A3E426 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4910D1A3AAB9700A3E426 /* QuartzCore.framework */; };
+		14B4911A1A3AAB9700A3E426 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4910E1A3AAB9700A3E426 /* Security.framework */; };
+		14B4911B1A3AAB9700A3E426 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4910F1A3AAB9700A3E426 /* Social.framework */; };
+		14B4911D1A3AAB9700A3E426 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B491111A3AAB9700A3E426 /* SystemConfiguration.framework */; };
+		14B491221A3AABF400A3E426 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B491211A3AABF400A3E426 /* libsqlite3.dylib */; };
+		14B491241A3AAD4200A3E426 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B491231A3AAD4200A3E426 /* libstdc++.6.dylib */; };
+		14EEA9F91A3AADF10063869C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14EEA9F81A3AADF10063869C /* LaunchScreen.xib */; };
+		14EEA9FD1A3AAE870063869C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14EEA9FC1A3AAE870063869C /* Images.xcassets */; };
+		14EEA9FF1A3ABD0D0063869C /* GabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EEA9FE1A3ABD0D0063869C /* GabCell.swift */; };
+		14EEAA061A3ABEAC0063869C /* up-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 14EEAA001A3ABEAC0063869C /* up-arrow.png */; };
+		14EEAA071A3ABEAC0063869C /* up-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14EEAA011A3ABEAC0063869C /* up-arrow@2x.png */; };
+		14EEAA081A3ABEAC0063869C /* up-arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14EEAA021A3ABEAC0063869C /* up-arrow@3x.png */; };
+		14EEAA091A3ABEAC0063869C /* down-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 14EEAA031A3ABEAC0063869C /* down-arrow.png */; };
+		14EEAA0A1A3ABEAC0063869C /* down-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14EEAA041A3ABEAC0063869C /* down-arrow@2x.png */; };
+		14EEAA0B1A3ABEAC0063869C /* down-arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14EEAA051A3ABEAC0063869C /* down-arrow@3x.png */; };
+		14EEAA0D1A3AC0850063869C /* GabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EEAA0C1A3AC0850063869C /* GabsViewController.swift */; };
+		14EEAA0F1A3AC5DB0063869C /* NewGabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EEAA0E1A3AC5DB0063869C /* NewGabViewController.swift */; };
+		14EEAA111A3ACCED0063869C /* GabRepliesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EEAA101A3ACCED0063869C /* GabRepliesViewController.swift */; };
+		14EEAA131A3ACF030063869C /* GabReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EEAA121A3ACF030063869C /* GabReplyCell.swift */; };
+		14FC66371A7C0DE100EDC290 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FC66331A7C0DE100EDC290 /* Bolts.framework */; };
+		14FC66381A7C0DE100EDC290 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FC66341A7C0DE100EDC290 /* Parse.framework */; };
+		14FC66391A7C0DE100EDC290 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FC66351A7C0DE100EDC290 /* ParseCrashReporting.framework */; };
+		14FC663A1A7C0DE100EDC290 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FC66361A7C0DE100EDC290 /* ParseUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1426C30E1A3AE2DC0009E6C4 /* NewGabReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGabReplyViewController.swift; sourceTree = "<group>"; };
+		14B490D31A3AAA2700A3E426 /* GibGab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GibGab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B490D71A3AAA2700A3E426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B490D81A3AAA2700A3E426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14B490DA1A3AAA2700A3E426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14B490DD1A3AAA2700A3E426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14B490F81A3AAA4C00A3E426 /* rwdevcon-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rwdevcon-bg.png"; sourceTree = "<group>"; };
+		14B490F91A3AAA4C00A3E426 /* rwdevcon-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rwdevcon-logo.png"; sourceTree = "<group>"; };
+		14B491061A3AAB9700A3E426 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		14B491071A3AAB9700A3E426 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		14B491081A3AAB9700A3E426 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		14B491091A3AAB9700A3E426 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14B4910A1A3AAB9700A3E426 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		14B4910B1A3AAB9700A3E426 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		14B4910C1A3AAB9700A3E426 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		14B4910D1A3AAB9700A3E426 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14B4910E1A3AAB9700A3E426 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		14B4910F1A3AAB9700A3E426 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		14B491111A3AAB9700A3E426 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		14B491211A3AABF400A3E426 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		14B491231A3AAD4200A3E426 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		14EEA9F81A3AADF10063869C /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		14EEA9FC1A3AAE870063869C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14EEA9FE1A3ABD0D0063869C /* GabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GabCell.swift; sourceTree = "<group>"; };
+		14EEAA001A3ABEAC0063869C /* up-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow.png"; sourceTree = "<group>"; };
+		14EEAA011A3ABEAC0063869C /* up-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow@2x.png"; sourceTree = "<group>"; };
+		14EEAA021A3ABEAC0063869C /* up-arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow@3x.png"; sourceTree = "<group>"; };
+		14EEAA031A3ABEAC0063869C /* down-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-arrow.png"; sourceTree = "<group>"; };
+		14EEAA041A3ABEAC0063869C /* down-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-arrow@2x.png"; sourceTree = "<group>"; };
+		14EEAA051A3ABEAC0063869C /* down-arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-arrow@3x.png"; sourceTree = "<group>"; };
+		14EEAA0C1A3AC0850063869C /* GabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GabsViewController.swift; sourceTree = "<group>"; };
+		14EEAA0E1A3AC5DB0063869C /* NewGabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGabViewController.swift; sourceTree = "<group>"; };
+		14EEAA101A3ACCED0063869C /* GabRepliesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GabRepliesViewController.swift; sourceTree = "<group>"; };
+		14EEAA121A3ACF030063869C /* GabReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GabReplyCell.swift; sourceTree = "<group>"; };
+		14FC66331A7C0DE100EDC290 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		14FC66341A7C0DE100EDC290 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		14FC66351A7C0DE100EDC290 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		14FC66361A7C0DE100EDC290 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14B490D01A3AAA2700A3E426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B491241A3AAD4200A3E426 /* libstdc++.6.dylib in Frameworks */,
+				14B491221A3AABF400A3E426 /* libsqlite3.dylib in Frameworks */,
+				14B491121A3AAB9700A3E426 /* Accounts.framework in Frameworks */,
+				14B491131A3AAB9700A3E426 /* AudioToolbox.framework in Frameworks */,
+				14FC66381A7C0DE100EDC290 /* Parse.framework in Frameworks */,
+				14B491141A3AAB9700A3E426 /* CFNetwork.framework in Frameworks */,
+				14B491151A3AAB9700A3E426 /* CoreGraphics.framework in Frameworks */,
+				14B491161A3AAB9700A3E426 /* CoreLocation.framework in Frameworks */,
+				14B491171A3AAB9700A3E426 /* libz.dylib in Frameworks */,
+				14FC663A1A7C0DE100EDC290 /* ParseUI.framework in Frameworks */,
+				14B491181A3AAB9700A3E426 /* MobileCoreServices.framework in Frameworks */,
+				14B491191A3AAB9700A3E426 /* QuartzCore.framework in Frameworks */,
+				14B4911A1A3AAB9700A3E426 /* Security.framework in Frameworks */,
+				14B4911B1A3AAB9700A3E426 /* Social.framework in Frameworks */,
+				14B4911D1A3AAB9700A3E426 /* SystemConfiguration.framework in Frameworks */,
+				14FC66371A7C0DE100EDC290 /* Bolts.framework in Frameworks */,
+				14FC66391A7C0DE100EDC290 /* ParseCrashReporting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B490CA1A3AAA2700A3E426 = {
+			isa = PBXGroup;
+			children = (
+				14B490D51A3AAA2700A3E426 /* GibGab */,
+				14B490D41A3AAA2700A3E426 /* Products */,
+				14B490F81A3AAA4C00A3E426 /* rwdevcon-bg.png */,
+				14B490F91A3AAA4C00A3E426 /* rwdevcon-logo.png */,
+				14EEAA001A3ABEAC0063869C /* up-arrow.png */,
+				14EEAA011A3ABEAC0063869C /* up-arrow@2x.png */,
+				14EEAA021A3ABEAC0063869C /* up-arrow@3x.png */,
+				14EEAA031A3ABEAC0063869C /* down-arrow.png */,
+				14EEAA041A3ABEAC0063869C /* down-arrow@2x.png */,
+				14EEAA051A3ABEAC0063869C /* down-arrow@3x.png */,
+			);
+			sourceTree = "<group>";
+		};
+		14B490D41A3AAA2700A3E426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B490D31A3AAA2700A3E426 /* GibGab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B490D51A3AAA2700A3E426 /* GibGab */ = {
+			isa = PBXGroup;
+			children = (
+				14EEA9FC1A3AAE870063869C /* Images.xcassets */,
+				14EEA9F81A3AADF10063869C /* LaunchScreen.xib */,
+				14B490D81A3AAA2700A3E426 /* AppDelegate.swift */,
+				14B490DA1A3AAA2700A3E426 /* ViewController.swift */,
+				14B490DC1A3AAA2700A3E426 /* Main.storyboard */,
+				14B490D61A3AAA2700A3E426 /* Supporting Files */,
+				14EEA9FE1A3ABD0D0063869C /* GabCell.swift */,
+				14EEAA0C1A3AC0850063869C /* GabsViewController.swift */,
+				14EEAA0E1A3AC5DB0063869C /* NewGabViewController.swift */,
+				14EEAA101A3ACCED0063869C /* GabRepliesViewController.swift */,
+				14EEAA121A3ACF030063869C /* GabReplyCell.swift */,
+				1426C30E1A3AE2DC0009E6C4 /* NewGabReplyViewController.swift */,
+			);
+			path = GibGab;
+			sourceTree = "<group>";
+		};
+		14B490D61A3AAA2700A3E426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14FC66331A7C0DE100EDC290 /* Bolts.framework */,
+				14FC66341A7C0DE100EDC290 /* Parse.framework */,
+				14FC66351A7C0DE100EDC290 /* ParseCrashReporting.framework */,
+				14FC66361A7C0DE100EDC290 /* ParseUI.framework */,
+				14B491231A3AAD4200A3E426 /* libstdc++.6.dylib */,
+				14B491211A3AABF400A3E426 /* libsqlite3.dylib */,
+				14B491061A3AAB9700A3E426 /* Accounts.framework */,
+				14B491071A3AAB9700A3E426 /* AudioToolbox.framework */,
+				14B491081A3AAB9700A3E426 /* CFNetwork.framework */,
+				14B491091A3AAB9700A3E426 /* CoreGraphics.framework */,
+				14B4910A1A3AAB9700A3E426 /* CoreLocation.framework */,
+				14B4910B1A3AAB9700A3E426 /* libz.dylib */,
+				14B4910C1A3AAB9700A3E426 /* MobileCoreServices.framework */,
+				14B4910D1A3AAB9700A3E426 /* QuartzCore.framework */,
+				14B4910E1A3AAB9700A3E426 /* Security.framework */,
+				14B4910F1A3AAB9700A3E426 /* Social.framework */,
+				14B491111A3AAB9700A3E426 /* SystemConfiguration.framework */,
+				14B490D71A3AAA2700A3E426 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14B490D21A3AAA2700A3E426 /* GibGab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B490F21A3AAA2700A3E426 /* Build configuration list for PBXNativeTarget "GibGab" */;
+			buildPhases = (
+				14B490CF1A3AAA2700A3E426 /* Sources */,
+				14B490D01A3AAA2700A3E426 /* Frameworks */,
+				14B490D11A3AAA2700A3E426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GibGab;
+			productName = GibGab;
+			productReference = 14B490D31A3AAA2700A3E426 /* GibGab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14B490CB1A3AAA2700A3E426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = RWDevCon;
+				TargetAttributes = {
+					14B490D21A3AAA2700A3E426 = {
+						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 14B490CE1A3AAA2700A3E426 /* Build configuration list for PBXProject "GibGab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14B490CA1A3AAA2700A3E426;
+			productRefGroup = 14B490D41A3AAA2700A3E426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B490D21A3AAA2700A3E426 /* GibGab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14B490D11A3AAA2700A3E426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14EEAA071A3ABEAC0063869C /* up-arrow@2x.png in Resources */,
+				14EEAA061A3ABEAC0063869C /* up-arrow.png in Resources */,
+				14EEAA0B1A3ABEAC0063869C /* down-arrow@3x.png in Resources */,
+				14EEAA081A3ABEAC0063869C /* up-arrow@3x.png in Resources */,
+				14EEA9F91A3AADF10063869C /* LaunchScreen.xib in Resources */,
+				14EEA9FD1A3AAE870063869C /* Images.xcassets in Resources */,
+				14B490FA1A3AAA4C00A3E426 /* rwdevcon-bg.png in Resources */,
+				14EEAA0A1A3ABEAC0063869C /* down-arrow@2x.png in Resources */,
+				14B490DE1A3AAA2700A3E426 /* Main.storyboard in Resources */,
+				14EEAA091A3ABEAC0063869C /* down-arrow.png in Resources */,
+				14B490FB1A3AAA4C00A3E426 /* rwdevcon-logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B490CF1A3AAA2700A3E426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14EEA9FF1A3ABD0D0063869C /* GabCell.swift in Sources */,
+				1426C30F1A3AE2DC0009E6C4 /* NewGabReplyViewController.swift in Sources */,
+				14EEAA0F1A3AC5DB0063869C /* NewGabViewController.swift in Sources */,
+				14EEAA111A3ACCED0063869C /* GabRepliesViewController.swift in Sources */,
+				14EEAA131A3ACF030063869C /* GabReplyCell.swift in Sources */,
+				14EEAA0D1A3AC0850063869C /* GabsViewController.swift in Sources */,
+				14B490DB1A3AAA2700A3E426 /* ViewController.swift in Sources */,
+				14B490D91A3AAA2700A3E426 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14B490DC1A3AAA2700A3E426 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B490DD1A3AAA2700A3E426 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14B490F01A3AAA2700A3E426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14B490F11A3AAA2700A3E426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14B490F31A3AAA2700A3E426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GibGab",
+				);
+				INFOPLIST_FILE = GibGab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		14B490F41A3AAA2700A3E426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GibGab",
+				);
+				INFOPLIST_FILE = GibGab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B490CE1A3AAA2700A3E426 /* Build configuration list for PBXProject "GibGab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B490F01A3AAA2700A3E426 /* Debug */,
+				14B490F11A3AAA2700A3E426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B490F21A3AAA2700A3E426 /* Build configuration list for PBXNativeTarget "GibGab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B490F31A3AAA2700A3E426 /* Debug */,
+				14B490F41A3AAA2700A3E426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14B490CB1A3AAA2700A3E426 /* Project object */;
+}

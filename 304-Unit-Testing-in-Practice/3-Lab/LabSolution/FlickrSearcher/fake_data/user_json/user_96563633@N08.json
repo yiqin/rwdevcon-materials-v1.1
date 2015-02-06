@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "96563633@N08",
+    "path_alias" : null,
+    "description" : {
+      "_content" : "Digital artist trained as an illustrator with an itch for photography.  I wanted to start taking my photography hobby seriously in '06 and bought my first &quot;big girl&quot; camera, a Canon 30D, and felt like I was seeing the world anew.\n\nI love photographing animals, particularly horses, and nature.  I briefly worked at the Kentucky Horse Park and have returned many times since then as it's my only access to horses and a great place for photos.\n\nI currently have eight furry cat models that are often my test subjects when trying out different camera settings.\n\nRecently my 30D suffered some tech issues and I decided to go with a new camera system instead of having it repaired.  I'm now out and about with a Sony Alpha a99.  It's like going from an old car to learning the controls of a spaceship...\n\nI also love tea and vegetarian food. :-D"
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/96563633@N08\/"
+    },
+    "nsid" : "96563633@N08",
+    "realname" : {
+      "_content" : "Caitlin Worth"
+    },
+    "ispro" : 0,
+    "iconserver" : "7257",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : "USA"
+    },
+    "username" : {
+      "_content" : "Caitlin Worth"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=96470820"
+    },
+    "timezone" : {
+      "label" : "Eastern Time (US & Canada)",
+      "offset" : "-05:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2006-06-25 09:57:01"
+      },
+      "firstdate" : {
+        "_content" : "1395640144"
+      },
+      "count" : {
+        "_content" : 1122
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/96563633@N08\/"
+    },
+    "iconfarm" : 8
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "93632219@N00",
+    "path_alias" : "greatandlittle",
+    "description" : {
+      "_content" : "\n"
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/greatandlittle\/"
+    },
+    "nsid" : "93632219@N00",
+    "realname" : {
+      "_content" : ""
+    },
+    "ispro" : 1,
+    "iconserver" : "5532",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : ""
+    },
+    "username" : {
+      "_content" : "greatandlittle"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=2250971"
+    },
+    "timezone" : {
+      "label" : "Central Time (US & Canada)",
+      "offset" : "-06:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2002-03-20 10:08:46"
+      },
+      "firstdate" : {
+        "_content" : "1137684803"
+      },
+      "count" : {
+        "_content" : 7885
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/greatandlittle\/"
+    },
+    "iconfarm" : 6
+  }
+}

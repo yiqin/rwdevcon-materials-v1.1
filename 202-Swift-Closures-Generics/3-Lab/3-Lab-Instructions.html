@@ -1,0 +1,388 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>3-Lab-Instructions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;margin:30px 0 0;padding:0;background:#fff}#wrapper{padding:20px}li{font-size:110%}li li{font-size:100%}li p{font-size:100%;margin:.5em 0}h1{color:#000}h2{color:#111}h3{color:#111;margin:0}h4{color:#111}h5{color:#111}h6{font-size:1em;line-height:1.5em;margin:1.5em 0}body,p,td,div{color:#111;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;word-wrap:break-word}a{color:#0d6ea1;text-decoration:none;-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;-ms-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}a:hover{color:#3593d9}body{font-size:15px;line-height:21px;margin:0 auto}h1{font-size:37px;line-height:42px;margin-top:42px;margin-bottom:21px}h2{font-size:27px;line-height:42px;margin-top:42px;margin-bottom:21px}h3{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}h4{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}p,ul,ol,pre,table,blockquote{margin-top:21px;margin-bottom:21px}hr{border:1px solid;margin:-1px 0}ul ul,ol ol,ul ol,ol ul{margin-top:0;margin-bottom:0}b,strong,em,small,code{line-height:1}.footnote{color:#0d6ea1;font-size:.8em;vertical-align:super}abbr,acronym{border-bottom:1px dotted #aaa}#wrapper img{max-width:100%;height:auto}dd{font-size:1em;margin-bottom:1em}li>p:first-child{margin:0}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{border:1px solid rgba(0,0,0,0.25);border-collapse:collapse;display:table;empty-cells:hide;margin:-1px 0 1.3125em;padding:0;table-layout:fixed}caption{display:table-caption;font-weight:700}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}tr{display:table-row}table th,table td{font-size:1.1em;line-height:1.3;padding:.5em 1em 0}table thead{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tbody{background:rgba(0,0,0,0.05)}table tfoot{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{display:inline-block;overflow:hidden;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#666}.poetry pre{display:block;font-family:Georgia,Garamond,serif !important;font-size:110% !important;font-style:italic;line-height:1.6em;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}blockquote p{font-size:110%;font-style:italic;line-height:1.6em}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;position:relative;vertical-align:super}sub{vertical-align:sub;top:-1px}p,h5{font-size:1.1429em;line-height:1.3125em;margin:1.3125em 0}dt,th{font-weight:700}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(200,200,200,0.25)}@media print{img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;color:#303030;padding:10px;position:relative;text-indent:0}}@media screen{.inverted{background:#252a2a}.inverted #wrapper{background:#252a2a;color:#eee}.inverted hr{border-color:#333f40 !important}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dt,.inverted dd{color:#eee}.inverted pre{background:#ccc}.inverted pre code{color:#111}.inverted table{background:none}.inverted table tr:nth-child(odd),.inverted table td:nth-child(odd){background:none}.inverted a{color:#acd1d5}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}}
+
+@media print{
+#generated-toc-clone,#generated-toc{display:none!important}
+}
+#generated-toc-clone li.missing,#mkreplaced-toc li.missing{list-style-type:none!important}#generated-toc-clone li, #mkreplaced-toc li{list-style-type:upper-roman}#generated-toc-clone li li, #mkreplaced-toc li li{list-style-type:decimal}#generated-toc-clone li li li,#mkreplaced-toc li li li{list-style-type:decimal-leading-zero}#generated-toc-clone li li li li,#mkreplaced-toc li li li li{list-style-type:lower-greek}#generated-toc-clone li li li li li,#mkreplaced-toc li li li li li{list-style-type:disc}#generated-toc-clone li li li li li li,#mkreplaced-toc li li li li li li{list-style-type:square}
+</style>
+
+</head>
+<body class="normal firstload">
+  <div id="wrapper">
+      <h1 id="202:swiftpart3:labinstructions">202: Swift, Part 3: Lab Instructions</h1>
+
+<p>In the demo you got a taste of closures, generics, and enums with associated values.</p>
+
+<p>In this lab, you&#8217;ll put this theory into action in a real app:</p>
+
+<ol>
+<li>You will make the <code>Grid</code> class from the Tic-Tac-Toe game generic, so that it is reusable in other games.</li>
+<li>You will use closures to improve the game&#8217;s win-detection logic.</li>
+</ol>
+
+<h2 id="makingthegridgeneric">Making the Grid generic</h2>
+
+<p>Open the project from <strong>TicTacToe&#8211;1</strong> in the <strong>1-Starter</strong> folder.</p>
+
+<p>If you were in the previous talk on Swift language basics, note that the Tic-Tac-Toe project for this session is slightly different.</p>
+
+<p>Previously, you used a dictionary to keep track of the moves that were made by both players. This was called the “turns” dictionary and it associated positions with players. </p>
+
+<blockquote>
+<p><strong>Note:</strong> A <code>Position</code> is one of the nine squares on the board. A <code>Player</code> is either X or O, cross or nought. (You can see these types in <strong>DataStructures.swift</strong>.)</p>
+</blockquote>
+
+<p>To see where the noughts and crosses are, you could simply look into this dictionary. This works great, but it’s definitely not the only way to solve this problem.</p>
+
+<p>Instead of using a general-purpose dictionary, we can also write our own container type. Let’s call this <code>Grid</code>.</p>
+
+<figure>
+<img src="Images/Grid.png" alt="" />
+</figure>
+
+<p>The <code>Grid</code> object represents a grid of 3x3 squares, exactly like what you see on the screen. In other words, this is a 2-dimensional array of <code>Player</code> objects. Each element in that 2-dimensional array directly corresponds with a square on the <code>Board</code> view. </p>
+
+<p>This models our problem domain closer than having a dictionary of <code>[Position: Player]</code> objects. It’s not that the dictionary approach was wrong, but I feel this grid is a more accurate description of the problem that we’re trying to solve.</p>
+
+<p>Take a quick look at the source code for <strong>Grid.swift</strong> (see the <strong>Lab</strong> group). It has the following properties:</p>
+
+<pre><code>let columns: Int  
+let rows: Int
+
+private var array: Array&lt;Player?&gt;
+</code></pre>
+
+<p>There are properties for the number of columns and rows, so <code>Grid</code> is not restricted to just 3x3 squares. The grid can be any size, allowing you to re-use this code for other games that have a larger playing area, such as <a href="https://en.wikipedia.org/wiki/Go_%28game%29">Go</a>.</p>
+
+<p>There is also an array of <code>Player</code> objects. Note that <code>Grid</code> actually stores <em>optional</em> <code>Player</code> objects because a grid square can be empty.</p>
+
+<p>Let’s talk about generics. What if you’re making another board game, for example chess? You may want to use this <code>Grid</code> object too &#8211; it’s pretty handy for making board games. Except in chess you don’t want to place <code>Player</code> values on the grid, you’d use a more complex <code>ChessPiece</code> object that also stores whether the piece is a king, queen, pawn, rook, and so on.</p>
+
+<p>So what do you do? You can copy this source file and replace every occurrence of <code>Player</code> with <code>ChessPiece</code>. But that leads to a bunch of duplicate work. If you&#8217;re anything like me, you&#8217;re lazy and you prefer to write code just once and then reuse it over and over. :]</p>
+
+<p>What you can do instead is make <code>Grid</code> independent of the type of objects it stores. That’s where generics come in.</p>
+
+<p>Notice how the data type <code>Player</code> occurs in many places in <strong>Grid.swift</strong>? To make the <code>Grid</code> generic you replace this specific type with a placeholder, <code>T</code>.</p>
+
+<pre><code>struct Grid&lt;T&gt; {
+</code></pre>
+
+<p>First, add <code>&lt;T&gt;</code> in angle brackets behind the name of the type. This tells Swift that <code>Grid</code> is now a generic type and that <code>T</code> is the name of the placeholder.</p>
+
+<p>Also replace every occurrence of <code>Player</code> in <strong>Grid.swift</strong> with that placeholder <code>T</code>. And just like that, <code>Grid</code> is completely generic, and you can store any type of object in it.</p>
+
+<p>Note: The array should have <code>T?</code> objects in it, because it stores optionals. </p>
+
+<p>Before you can use this new generic <code>Grid</code> in the game, you first have to tell it what objects it stores. Switch to <strong>ViewController.swift</strong>.</p>
+
+<p>Xcode gives errors on all the lines that use the <code>grid</code> variable. That’s because it doesn’t have enough information to create a new instance of <code>Grid</code>. At this point, the placeholder <code>T</code> must be filled in with the actual kind of object you intend to use.</p>
+
+<p>Tell the compiler that it’s really a <code>Grid</code> of <code>Player</code> objects:</p>
+
+<pre><code>private var grid = Grid&lt;Player&gt;(columns: 3, rows: 3)
+</code></pre>
+
+<p>All the errors should now be gone.</p>
+
+<p>Note that the <code>reset()</code> method has a similar line, but you don&#8217;t need to write <code>&lt;Player&gt;</code> there (although it would be OK if you did). Due to the magic of <em>type inference</em>, Swift already knows that <code>self.grid</code> is a <code>Grid</code> of <code>Player</code> objects.</p>
+
+<p>Build and run. The game should still work exactly the same, but you have successfully made the <code>Grid</code> type reusable across many other projects. It no longer depends on <code>Player</code> objects. </p>
+
+<p>If you were making a chess game, you’d add this same <strong>Grid.swift</strong> source file to your project and you’d write <code>Grid&lt;ChessPiece&gt;(columns: 8, rows: 8)</code> to make a grid that stores <code>ChessPiece</code> objects.</p>
+
+<p>That’s the power of generics. They allow you to reuse data structures. In the next section you’ll also see an example of a generic function. That’s a function you can use with many different data types. All in the name of re-use and writing less code.</p>
+
+<p>So how do you know when to make something generic? I tend to start by writing the non-generic version. When I realize I could reuse this object somewhere else, in some other context, I make it generic by replacing specific types – such as <code>Player</code> – with a placeholder type <code>T</code>. It&#8217;s really not as difficult as it sounds. :]</p>
+
+<h2 id="improvingthewin-detectionlogic">Improving the win-detection logic</h2>
+
+<p>Tic-Tac-Toe is a pretty simple game &#8211; the biggest job of the app is to determine whether there is a winner or not. This algorithm is part of the <code>checkEnd()</code> method in <strong>ViewController.swift</strong>.</p>
+
+<p>There are two things you can improve here:</p>
+
+<ol>
+<li>There is a lot of duplicate code in <code>checkEnd()</code>. You can write this much more succinctly by using closures.</li>
+<li>The logic for checking whether a player has 3-in-a-row can also be used in other games, so you&#8217;ll make the algorithm re-usable with generics.</li>
+</ol>
+
+<p>You will put your improvements into a new function, <code>checkWin()</code>. You can already find a basic version of this function in the file <strong>WinDetection.swift</strong> inside the <strong>Lab</strong> group. (This is a global function in a source file of its own, so that you can easily put it into other projects.)</p>
+
+<p>Uncomment the <code>checkWin()</code> function. It should look as follows:</p>
+
+<pre><code>func checkWin(grid: Grid&lt;Player&gt;, position: Position, player: Player) -&gt; Bool {  
+  let row = position.row  
+  let column = position.column
+
+  // TODO: paste code here
+
+  return rowWin || columnWin || diagonalAWin || diagonalBWin  
+}
+</code></pre>
+
+<p>(It currently has errors. You will fix these in a moment.)</p>
+
+<p>This function takes three parameters:</p>
+
+<ul>
+<li><code>grid</code> &#8212; Note that the type of this parameter is <code>Grid&lt;Player&gt;</code> because <code>Grid</code> is now a generic type; you always have to tell the compiler what sort of objects it is made out of.</li>
+<li><code>position</code> &#8212; The row and column where the most recent move was made.</li>
+<li><code>player</code> &#8212; This is the <code>Player</code> who made the move.</li>
+</ul>
+
+<p><code>checkWin()</code> returns <code>true</code> when this move results in a win &#8211; i.e. the player made 3-in-a-row &#8211; or <code>false</code> if it doesn&#8217;t.</p>
+
+<p>You will now move the code from <code>ViewController.checkEnd()</code> into this new <code>checkWin()</code> function.</p>
+
+<h2 id="refactorviewcontroller">Refactor ViewController</h2>
+
+<p>Go to <strong>ViewController.swift</strong>. From <code>checkEnd()</code>, cut the <code>for</code> loops that check the rows and columns and diagonals for 3-in-a-row. (Leave the <code>UIAlertController</code> stuff.)</p>
+
+<p>Paste this code into the new <code>checkWin()</code> function.</p>
+
+<p>In the code you just pasted, replace <code>lastMove.player</code> with just <code>player</code>. That fixes all the compiler errors in this file.</p>
+
+<p>In <strong>ViewController.swift</strong>, replace the line that says:</p>
+
+<pre><code>if rowWin || columnWin || diagonalAWin || diagonalBWin {
+</code></pre>
+
+<p>with:</p>
+
+<pre><code>if checkWin(self.grid, lastMove.position, lastMove.player) {
+</code></pre>
+
+<p>(You can also remove the first two lines, <code>let row =</code>&#8230; and <code>let column =</code>&#8230;)</p>
+
+<p>Build and run, and make sure everything still works OK.</p>
+
+<p>So far all you did was separate the logic for checking whether there is a winner, from the logic that shows the alert when there is a win or draw. This lets you call the <code>checkWin()</code> function from other places, for example to create the brains for a computer-controlled AI player (unfortunately, we don&#8217;t have time for that in this talk).</p>
+
+<h2 id="makecheckwingeneric">Make <code>checkWin()</code> generic</h2>
+
+<p>You&#8217;ve seen that types, such as <code>Grid</code>, can be generic. But you can also make functions generic. This makes them independent of the type of one or more of their parameters.</p>
+
+<p>In this case, you&#8217;re going to make <code>checkWin()</code> independent of <code>Player</code>, so you could theoretically re-use it in another game, such as <a href="https://en.wikipedia.org/wiki/Connect_Four">Connect Four</a>.</p>
+
+<p>The type signature of a generic function looks like this:</p>
+
+<pre><code>func name&lt;T&gt;(parameter: T) {  
+  . . .  
+}
+</code></pre>
+
+<p>The <code>&lt;T&gt;</code> after the function name tells Swift that this is a generic function with <code>T</code> as the placeholder for the actual type name. </p>
+
+<p>In <strong>WinDetection.swift</strong>, change the function signature to:</p>
+
+<pre><code>func checkWin&lt;T&gt;(grid: Grid&lt;T&gt;, position: Position, player: T) -&gt; Bool {
+</code></pre>
+
+<p>You&#8217;ve added the placeholder type <code>T</code> behind the name of the function. You also used <code>T</code> to replace the <code>Player</code> type of the <code>grid</code> and <code>player</code> parameters.</p>
+
+<p>This means that <code>checkWin()</code> will now work on any instance of <code>Grid</code>, regardless of what type of objects the grid actually contains (<code>Player</code>, <code>ChessPiece</code>, <code>Candy</code>, and so on).</p>
+
+<p>Unfortunately, Xcode now gives error messages on these lines:</p>
+
+<pre><code>if test != player {
+</code></pre>
+
+<p>The error message is &#8220;Cannot invoke != with an argument list of type (T, T)&#8221;. This means Swift does not have an <code>!=</code> operator for this placeholder type <code>T</code>. That makes sense, because <code>T</code> could be anything!</p>
+
+<p>The <code>!=</code> operator doesn&#8217;t automatically work on all types, only on types that conform to the <code>Equatable</code> protocol.</p>
+
+<p>You can use a <em>type restriction</em>, so that Swift knows that whatever type you&#8217;re going to use must at least conform to the <code>Equatable</code> protocol. The syntax of a type restriction is <code>&lt;T: ProtocolName&gt;</code>, so change the function signature to:</p>
+
+<pre><code>func checkWin&lt;T: Equatable&gt;(grid: Grid&lt;T&gt;, position: Position, player: T) -&gt; Bool {
+</code></pre>
+
+<p>Now the errors are gone. You can now use <code>checkWin()</code> in any X-in-a-row game you can think of!</p>
+
+<p>Build and run to make sure everything still works.</p>
+
+<blockquote>
+<p><strong>Note:</strong> Here, <code>T</code> stands in for the <code>Player</code> type, but <code>Player</code> is not actually declared as conforming to <code>Equatable</code> (see <strong>DataStructures.swift</strong>). So how come this still works? Swift recognizes that <code>Player</code> is a simple enum, so it automatically makes it <code>Equatable</code>. After all, a variable with the enum value <code>Player.X</code> is always equal to any other variable with the enum value <code>Player.X</code>.</p>
+</blockquote>
+
+<h2 id="simplifyusingclosures">Simplify using closures</h2>
+
+<p>If you look closely at the <code>for</code>-loops in <code>checkWin()</code>, you&#8217;ll notice that they all do the exact same thing except for the way they step through the grid. </p>
+
+<p>For example, the loop that checks the row steps through the grid horizontally; the loop that checks the column steps through the grid vertically; and the loops for the diagonals step in both directions.</p>
+
+<p>These four loops all follow the same template:</p>
+
+<pre><code>var win = true  
+for i in 0..&lt;3 {  
+  if let test = grid[/* ... calculate Position ... */] {  
+    if test != player {  
+      win = false  
+      break  
+    }
+  } else {  
+    win = false  
+    break  
+  }
+}
+</code></pre>
+
+<p>The only thing that is different is how they convert the value of the loop counter <code>i</code> into a grid position:</p>
+
+<pre><code>Check row:        Position(column: i,      row: row)  
+Check column:     Position(column: column, row: i)  
+Check diagonal A: Position(column: i,      row: i)  
+Check diagonal B: Position(column: i,      row: 2-i)
+</code></pre>
+
+<p>All this code duplication seems like something that should be refactored. Instead of having four different loops, you will extract the thing that is different between these loops &#8211; calculating the <code>Position</code> values &#8211; and put that into four different closures.</p>
+
+<p>First, declare a <code>typealias</code> to make things easier to read:</p>
+
+<pre><code>private typealias Step = (i: Int, row: Int, column: Int) -&gt; Position
+</code></pre>
+
+<p>This describes a closure that takes three parameters &#8211; <code>i</code>, the loop variable, <code>row</code> the current row, and <code>column</code> the current column &#8211; and turns these into a new <code>Position</code> object. Exactly how that happens depends on the closure.</p>
+
+<p>To begin with, define a closure that steps through the columns of a single row:</p>
+
+<pre><code>private let horizontal: Step = { i, row, column in Position(column: i, row: row) }
+</code></pre>
+
+<p>This is exactly what happens in the very first <code>for</code> loop. The loop counter <code>i</code> is used to step through the columns 0, 1, 2, while the row value remains the same.</p>
+
+<blockquote>
+<p><strong>Note:</strong> This closure does not have a <code>return</code> statement, even though it returns a value. When the closure only has a single line you can leave out <code>return</code>. It&#8217;s a little shortcut.</p>
+</blockquote>
+
+<figure>
+<img src="Images/Stepping.png" alt="" />
+</figure>
+
+<p>Because this closure ignores the <code>column</code> parameter, you can also write it like so:</p>
+
+<pre><code>private let horizontal: Step = { i, row, _ in Position(column: i, row: row) }
+</code></pre>
+
+<p>The wildcard symbol <code>_</code> tells Swift that you&#8217;re not using this parameter.</p>
+
+<p>Now add a second closure. This one steps through the rows 0, 1, 2 of a single column:</p>
+
+<pre><code>private let vertical: Step = { i, _, column in Position(column: column, row: i) }
+</code></pre>
+
+<p>This is identical to what happens in the <code>// Check column</code> section.</p>
+
+<p>Likewise, you can also create closures for the two diagonals:</p>
+
+<pre><code>private let diagonalA: Step = { i, _, _ in Position(column: i, row: i) }  
+private let diagonalB: Step = { i, _, _ in Position(column: i, row: 2-i) }
+</code></pre>
+
+<p>To recap: What you&#8217;ve done here is create four closures that convert the value of the loop counter <code>i</code> &#8211; and the current <code>column</code> and <code>row</code> numbers &#8211; into a new <code>Position</code> object. Each of those closures does that in a slightly different way, corresponding to the 4 <code>for</code>-loops.</p>
+
+<p>Now, if <code>stepper</code> is a variable that refers to one of these closures, then this is how you can use it to look at the squares in the grid:</p>
+
+<pre><code>for i in 0..&lt;3 {  
+  if let test = grid[stepper(i: i, row: row, column: column)] {  
+    . . .  
+  }
+}
+</code></pre>
+
+<p>If <code>stepper</code> is the <code>horizontal</code> closure, this steps through positions <code>(0, row)</code>, <code>(1, row)</code>, and <code>(2, row)</code>.</p>
+
+<p>But if <code>stepper</code> is the <code>vertical</code> closure, this steps through positions <code>(column, 0)</code>, <code>(column, 1)</code>, and <code>(column, 2)</code>.</p>
+
+<p>You don&#8217;t have to change the loop &#8211; the only thing that changes is which closure you&#8217;re using.</p>
+
+<p>Now you&#8217;ll write a new function, <code>winInDirection()</code>, that looks at the grid squares in a particular direction and returns <code>true</code> if there are 3-in-a-row.</p>
+
+<p>Here is the function in its entirety:</p>
+
+<pre><code>private func winInDirection&lt;T: Equatable&gt;(grid: Grid&lt;T&gt;, position: Position, player: T, stepper: Step) -&gt; Bool {  
+  let row = position.row  
+  let column = position.column
+
+  var win = true  
+  for i in 0..&lt;3 {  
+    if let test = grid[stepper(i: i, row: row, column: column)] {  
+      if test != player {  
+        win = false  
+        break  
+      }
+    } else {  
+      win = false  
+      break  
+    }
+  }  
+  return win  
+}
+</code></pre>
+
+<p>As you can see, this function contains only a single <code>for</code> loop. The closure that it uses is passed in through the <code>stepper</code> parameter. Note that <code>winInDirection()</code> needs to be a generic function too, because it will be called from <code>checkWin()</code>.</p>
+
+<p>With all these pieces in place, you can rewrite <code>checkWin()</code> to be as simple as this:</p>
+
+<pre><code>func checkWin&lt;T: Equatable&gt;(grid: Grid&lt;T&gt;, position: Position, player: T) -&gt; Bool {  
+  return winInDirection(grid, position, player, horizontal)  
+      || winInDirection(grid, position, player, vertical)  
+      || winInDirection(grid, position, player, diagonalA)  
+      || winInDirection(grid, position, player, diagonalB)  
+}
+</code></pre>
+
+<p>You&#8217;ve replaced the four loops with four calls to the same function, but each time you&#8217;re passing along a different closure. How cool is that?</p>
+
+<p>Build and run, and make sure the win-detection logic still works OK. Excellent!</p>
+
+<p>The current solution is fine, but you can do even better. Swift allows functions to be nested. That means you can put the <code>winInDirection()</code> function <em>inside</em> of <code>checkWin()</code>, as follows:</p>
+
+<pre><code>func checkWin&lt;T: Equatable&gt;(grid: Grid&lt;T&gt;, position: Position, player: T) -&gt; Bool {  
+  let row = position.row  
+  let column = position.column
+
+  func winInDirection(stepper: Step) -&gt; Bool {  
+    var win = true  
+    for i in 0..&lt;3 {  
+      if let test = grid[stepper(i: i, row: row, column: column)] {  
+        if test != player {  
+          win = false  
+          break  
+        }
+      } else {  
+        win = false  
+        break  
+      }
+    }  
+    return win  
+  }
+
+  let rowWin = winInDirection(horizontal)  
+  let columnWin = winInDirection(vertical)  
+  let diagonalAWin = winInDirection(diagonalA)  
+  let diagonalBWin = winInDirection(diagonalB)
+
+  return rowWin || columnWin || diagonalAWin || diagonalBWin  
+}
+</code></pre>
+
+<p>Notice how <code>winInDirection()</code> no longer needs to be declared as private, nor does it need the <code>position</code> or <code>player</code> parameters because it can grab those from its enclosing scope.</p>
+
+<p>Build and run once more.</p>
+
+<p>Does all of this make sense to you? Let me know if you have any questions!</p>
+
+<p>Congratulations, you now have a <code>Grid</code> object that can be reused in many other board games, and a <code>checkWin()</code> function that is suitable for many other X-in-a-row games. (If you still have time left, try to change this logic so that it is not limited to just 3 rows and columns.)</p>
+
+<p>You’re ready to continue on to the challenges!</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>

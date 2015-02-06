@@ -1,0 +1,38 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "61082884@N04",
+    "path_alias" : "primatologist",
+    "description" : {
+      "_content" : "Born in Lancashire, England. I lived for a short time in Ontario, Canada before returning to England where I spent 11 years living between London and the South coast before moving to Houston, Texas. Now retired after working for 20 years for a major medical institution. I love to photograph people in everyday situations. As I now work with animal rehab (both domestic and wildlife) I take advantage of the photo ops that this presents. Basically, I photograph to remember -  to capture a moment in time. "
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/primatologist\/"
+    },
+    "nsid" : "61082884@N04",
+    "ispro" : 0,
+    "iconserver" : "3839",
+    "can_buy_pro" : 0,
+    "username" : {
+      "_content" : "Ellsasha"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=61050745"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2006-01-21 08:50:35"
+      },
+      "firstdate" : {
+        "_content" : "1301188483"
+      },
+      "count" : {
+        "_content" : 266
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/primatologist\/"
+    },
+    "iconfarm" : 4
+  }
+}

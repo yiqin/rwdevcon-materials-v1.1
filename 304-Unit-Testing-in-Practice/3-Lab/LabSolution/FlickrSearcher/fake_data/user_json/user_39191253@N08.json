@@ -1,0 +1,48 @@
+{
+  "stat" : "ok",
+  "person" : {
+    "id" : "39191253@N08",
+    "path_alias" : "louisraphael",
+    "description" : {
+      "_content" : "I'm rather great."
+    },
+    "photosurl" : {
+      "_content" : "https:\/\/www.flickr.com\/photos\/louisraphael\/"
+    },
+    "nsid" : "39191253@N08",
+    "realname" : {
+      "_content" : "Louis Raphael"
+    },
+    "ispro" : 0,
+    "iconserver" : "8662",
+    "can_buy_pro" : 0,
+    "location" : {
+      "_content" : ""
+    },
+    "username" : {
+      "_content" : "louisraphael"
+    },
+    "mobileurl" : {
+      "_content" : "https:\/\/m.flickr.com\/photostream.gne?id=39098440"
+    },
+    "timezone" : {
+      "label" : "Pacific Time (US & Canada); Tijuana",
+      "offset" : "-08:00"
+    },
+    "photos" : {
+      "firstdatetaken" : {
+        "_content" : "2009-06-23 13:18:51"
+      },
+      "firstdate" : {
+        "_content" : "1245790525"
+      },
+      "count" : {
+        "_content" : 241
+      }
+    },
+    "profileurl" : {
+      "_content" : "https:\/\/www.flickr.com\/people\/louisraphael\/"
+    },
+    "iconfarm" : 9
+  }
+}

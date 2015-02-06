@@ -1,0 +1,51 @@
+// ********************
+// Code for Story.swift
+// ********************
+
+func generateStory(monstersWin: Bool) -> String {
+var storyText = ""
+
+if monstersWin {
+if let winStory = winStory {
+storyText = winStory
+}
+} else {
+if let loseStory = loseStory {
+storyText = loseStory
+}
+}
+var monsters = "zombies"
+if type == .vampires {
+monsters = "vampires"
+}
+
+if verb != nil {
+storyText = replaceText("<verb>", withText: verb!, inString: storyText)
+}
+if number != nil {
+storyText = replaceText("<number>", withText: String(number!), inString: storyText)
+}
+if name != nil {
+storyText = replaceText("<name>", withText: name!, inString: storyText)
+}
+storyText = replaceText("<monsters>", withText: monsters, inString: storyText)
+
+return storyText
+}
+
+private func replaceText(text: String, withText: String, inString: String) -> String {
+return inString.stringByReplacingOccurrencesOfString(text, withString: withText, options: NSStringCompareOptions.LiteralSearch, range: nil)
+}
+
+
+// *******************************************
+// Code for StorySelectionViewController.swift
+// *******************************************
+
+var zombieWinStory = "<name> entered the room and saw <number> <monsters>! <name> ran down the hall. Sadly, <name> was <verb> by all the <monsters>! \n\nPoor <name>. Better luck next time!"
+var zombieLoseStory = "<name> entered the room and saw <number> <monsters>! Without missing a beat, <name> <verb> all of the <monsters>! \n\nPoor <monsters>. Fantastic! \n\n<name> will live to fight another day."
+var vampireWinStory = "<name> entered the room and saw <number> <monsters>! <name> ran down the hall. Sadly, <name> was <verb> by all the <monsters>! \n\nPoor <name>. Better luck next time!"
+var vampireLoseStory = "<name> entered the room and saw <number> <monsters>! Without missing a beat, <name> <verb> all of the <monsters>! \n\nPoor <monsters>. Fantastic! \n\n<name> will live to fight another day."
+
+let zombieStory = Story(title: "Attack of the Zombies", winStory: zombieWinStory, loseStory: zombieLoseStory, type: StoryType.zombies)
+let vampireStory = Story(title: "Attack of the Vampires!", winStory: vampireWinStory, loseStory: vampireLoseStory, type: StoryType.vampires)
