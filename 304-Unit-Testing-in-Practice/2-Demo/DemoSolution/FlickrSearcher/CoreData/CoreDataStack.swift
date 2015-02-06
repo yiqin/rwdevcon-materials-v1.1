@@ -117,6 +117,12 @@ public class CoreDataStack {
     _managedObjectModel = nil
     _persistentStoreCoordinator = nil
     
+    
+    
+    if !isTesting {
+        
+    }
+    
     let storePath = databaseFileURL().path!
     if NSFileManager.defaultManager().fileExistsAtPath(storePath) {
       var error: NSError?
