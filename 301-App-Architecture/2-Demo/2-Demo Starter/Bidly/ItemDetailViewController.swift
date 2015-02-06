@@ -3,6 +3,9 @@ import UIKit
 
 class ItemDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NewBidViewControllerDelegate {
 
+    var watchlist:Watchlist!
+    
+    
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var watchToggleButton: UIButton!
   @IBOutlet weak var startingBidLabel: UILabel!
@@ -10,9 +13,10 @@ class ItemDetailViewController: UIViewController, UITableViewDataSource, UITable
   @IBOutlet weak var descriptionTextView: UITextView!
   @IBOutlet weak var bidsTableView: UITableView!
 
-  var activityViewController: ActivityViewController!
-  var searchViewController: SearchViewController!
-  var watchViewController: WatchViewController!
+    // Don't do this!
+//  var activityViewController: ActivityViewController!
+//  var searchViewController: SearchViewController!
+//  var watchViewController: WatchViewController!
 
   private var downloadTask: NSURLSessionDownloadTask? = nil
 
@@ -67,12 +71,19 @@ class ItemDetailViewController: UIViewController, UITableViewDataSource, UITable
 
     // Is the user currently watching this item?
     watchingItem = false
+    
+    watchedItem = watchlist.hasItem(item)
+    
+    /*
+    // Bad way anyway
     for watchedItem in watchViewController.items {
       if watchedItem.itemID == item.itemID {
         watchingItem = true
         break
       }
     }
+    */
+    
 
     // This must happen in viewWillAppear() because you can have an Item Detail
     // screen open in different tabs at the same time. So when you un/watch an
@@ -103,31 +114,38 @@ class ItemDetailViewController: UIViewController, UITableViewDataSource, UITable
 
   @IBAction func watchToggled(sender: AnyObject) {
     if watchingItem {
-      // Remove the item from the watchlist array in WatchViewController.
-      for i in 0..<watchViewController.items.count {
-        if watchViewController.items[i].itemID == item.itemID {
-          watchViewController.items.removeAtIndex(i)
-          break
-        }
-      }
+//      // Remove the item from the watchlist array in WatchViewController.
+//      for i in 0..<watchViewController.items.count {
+//        if watchViewController.items[i].itemID == item.itemID {
+//          watchViewController.items.removeAtIndex(i)
+//          break
+//        }
+//      }
+//
+//      // Because we're no longer watching the item, the most recent bids for
+//      // it should disappear from the Activity screen.
+//      activityViewController.cullBids()
 
-      // Because we're no longer watching the item, the most recent bids for
-      // it should disappear from the Activity screen.
-      activityViewController.cullBids()
-
+        watchilist.removeItem(item)
       watchingItem = false
     } else {
       // Add the item to the watchlist array in WatchViewController.
-      watchViewController.items.append(item)
+      
+        // watchViewController.items.append(item)
+        watchlist.addItem(item)
       watchingItem = true
     }
 
     // Because we changed the items array in WatchViewController, we must
     // re-sort it, save it to disk, and reload the table view.
-    watchViewController.sortItems()
-    watchViewController.saveWatchlist()
-    watchViewController.tableView.reloadData()
+//    watchViewController.sortItems()
+//    watchViewController.saveWatchlist()
+//    watchViewController.tableView.reloadData()
+    // #### This is bad.
 
+    watchlist.sortItems()
+    watchlist.saveWatchlist()
+    
     updateToggleButton()
   }
 

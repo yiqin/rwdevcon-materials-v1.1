@@ -5,6 +5,7 @@ class Watchlist {
   private(set) var items = [Item]()
 
   init() {
+    loadWatchlist()
   }
 
   // MARK: Managing items
@@ -23,6 +24,18 @@ class Watchlist {
     }
   }
 
+    // This must be public because other view controllers need to access it.
+    func saveWatchlist() {
+        println("Saving file to: '\(dataFilePath())'")
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
+        archiver.encodeObject(items, forKey: "Items")
+        archiver.finishEncoding()
+        if !data.writeToFile(dataFilePath(), atomically: true) {
+            println("Error saving file to: '\(dataFilePath())'")
+        }
+    }
+    
   // Stop watching an item.
   func removeAtIndex(index: Int) {
     items.removeAtIndex(index)

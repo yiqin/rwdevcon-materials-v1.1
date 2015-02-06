@@ -36,16 +36,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // first time you run the app. It also intercepts all networking requests.
     installFakeServer()
 
-    // Because the view controllers need to access each other's data, here we
-    // give them references to one another.
-    watchViewController.activityViewController = activityViewController
-    watchViewController.searchViewController = searchViewController
+//    // Because the view controllers need to access each other's data, here we
+//    // give them references to one another.
+//    watchViewController.activityViewController = activityViewController
+//    watchViewController.searchViewController = searchViewController
 
     let watchlist = Watchlist()
     activityViewController.watchlist = watchlist
     searchViewController.watchlist = watchlist
     settingsViewController.watchlist = watchlist
 
+    watchViewController.watchlist = watchlist
+    //  All references to this watchlist.
+    
     return true
   }
 }

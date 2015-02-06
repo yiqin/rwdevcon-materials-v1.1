@@ -3,11 +3,14 @@ import UIKit
 
 class WatchViewController: UITableViewController {
 
-  var activityViewController: ActivityViewController!
-  var searchViewController: SearchViewController!
+    var watchlist:Watchlist!
+    
+//  var activityViewController: ActivityViewController!
+//  var searchViewController: SearchViewController!
 
-  // This must be public because other view controllers need to access it.
-  var items = [Item]()
+    
+//  // This must be public because other view controllers need to access it.
+//  var items = [Item]()
 
   private lazy var currencyFormatter: NSNumberFormatter = {
     let formatter = NSNumberFormatter()
@@ -45,9 +48,10 @@ class WatchViewController: UITableViewController {
       if let indexPath = tableView.indexPathForCell(sender as UITableViewCell) {
         let controller = segue.destinationViewController as ItemDetailViewController
         controller.item = items[indexPath.row]
-        controller.activityViewController = activityViewController
-        controller.searchViewController = searchViewController
-        controller.watchViewController = self
+        controller.item = watchlist.items[indexPath.row]
+//        controller.activityViewController = activityViewController
+//        controller.searchViewController = searchViewController
+//        controller.watchViewController = self
       }
     }
   }
@@ -55,7 +59,8 @@ class WatchViewController: UITableViewController {
   // MARK: Table View Data Source
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return items.count
+    // return items.count
+    return watchlist.items.count
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -97,6 +102,9 @@ class WatchViewController: UITableViewController {
       if let data = NSData(contentsOfFile: path) {
         let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
         items = unarchiver.decodeObjectForKey("Items") as [Item]
+        
+        
+        
         unarchiver.finishDecoding()
       }
     }
