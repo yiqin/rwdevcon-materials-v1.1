@@ -35,16 +35,27 @@ class CardNode: ASCellNode {
     
     // Set Up Nodes
     imageNode.image = card.image
+    titleTextNode.attributedString = NSAttributedString.attributedStringForTitleText(card.name)
     
     // Wire Target Action Pairs
     
+    
     // Build Hierarchy
     addSubnode(imageNode)
+    addSubnode(titleTextNode)
   }
   
   override func calculateSizeThatFits(constrainedSize: CGSize) -> CGSize {
     // Measure subnodes
     let cardSize = imageNode.measure(constrainedSize)
+    titleTextNode.measure(cardSize)
+    
+    
+    // What happen when we need a bigger size......
+    // Need to how much space, how much ....
+    
+    
+    
     
     // Calculate frames
     frameSetOrNil = FrameSet(node: self)
@@ -55,7 +66,7 @@ class CardNode: ASCellNode {
   
   override func layout() {
     if let frames = frameSetOrNil {
-      imageNode.frame = frames.imageFrame
+      imageNode.frame = frames.imageFrame   // just an assignment , super fast.
       
     }
   }

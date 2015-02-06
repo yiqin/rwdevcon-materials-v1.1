@@ -17,7 +17,7 @@ class DemoViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     let card = cards[0]
-    addDisplayLink()
+    
     
   }
   
