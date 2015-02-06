@@ -103,6 +103,9 @@ class BooksTableViewController: UITableViewController {
     
     @IBAction func adjustRating(sender: UISegmentedControl) {
         if let indexPath = tableView.indexPathForView(sender) {
+            // lab
+            view.endEditing(true)
+            
             let book = fetchedResultsDataSource.resultsController!.objectAtIndexPath(indexPath) as Book
             let increment = sender.selectedSegmentIndex == 0 ? -1 : 1
             var newRating = book.rating.integerValue + increment
