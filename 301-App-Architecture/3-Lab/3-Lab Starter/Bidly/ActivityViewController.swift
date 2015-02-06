@@ -3,6 +3,7 @@ import UIKit
 
 class ActivityViewController: UITableViewController {
 
+    var serverAPI: ServerAPI!
   var watchlist: Watchlist!
 
   private lazy var currencyFormatter: NSNumberFormatter = {

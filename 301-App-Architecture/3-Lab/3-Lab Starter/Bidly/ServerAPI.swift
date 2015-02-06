@@ -39,6 +39,8 @@ public class ServerAPI {
     //     delegate.needToAuthenticate()
     //     after authentication finished, process all the requests in the queueu
     // }
+    
+    
 
     let session = NSURLSession.sharedSession()
     request.performWithSession(session)
