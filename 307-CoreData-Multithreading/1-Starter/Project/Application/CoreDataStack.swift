@@ -77,7 +77,7 @@ public class CoreDataStack : NSObject
         savingContext.persistentStoreCoordinator = self.coordinator
         
         // I lost one line of code herererere.
-        /// context.watchSavesToContext
+        // // // context.watchSavesToContext(savingContext)
         
         return savingContext
         
@@ -136,4 +136,7 @@ extension NSManagedObjectContext {
         
         
     }
+    
+    
+
 }
