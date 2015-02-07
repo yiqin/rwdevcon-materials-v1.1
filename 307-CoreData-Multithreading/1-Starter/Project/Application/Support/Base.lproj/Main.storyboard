@@ -134,7 +134,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Courses" id="9UU-Ic-f3Z">
-                        <barButtonItem key="rightBarButtonItem" title="Load Courses" id="hoo-ge-20m"/>
+                        <barButtonItem key="rightBarButtonItem" title="Load Courses" id="hoo-ge-20m">
+                            <connections>
+                                <action selector="loadCourses" destination="IBd-y2-XZK" id="M7c-Oc-Shu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="dataSource" destination="IBd-y2-XZK" id="NTe-W0-V7P"/>
@@ -145,6 +149,7 @@
                 <customObject id="EuN-6w-eCn" customClass="CatalogTableViewDataSource" customModule="CourseCatalog">
                     <connections>
                         <outlet property="catalogDataSource" destination="IBd-y2-XZK" id="f29-PW-VaD"/>
+                        <outlet property="tableView" destination="yFt-qX-zxz" id="ZcX-IX-AGe"/>
                     </connections>
                 </customObject>
                 <customObject id="4GU-ak-D2T" customClass="CoreDataStack" customModule="CourseCatalog" customModuleProvider="target"/>

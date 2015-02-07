@@ -65,6 +65,23 @@ public class CoreDataStack : NSObject
     
     return context
     }()
+    
+    
+    var backgroundContext :NSManagedObjectContext {
+        return savingContext
+    }
+    
+    private lazy var savingContext : NSManagedObjectContext = {
+        
+        let savingContext = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
+        savingContext.persistentStoreCoordinator = self.coordinator
+        return savingContext
+        
+//        let notificationCenter = NSNotificationCenter.defaultCenter()
+//        let selector = Selector("megeChangesFromContextDidSaveNotification:")
+//        notificationCenter.addObserver(self, selector:selector, name: NSManagedObjectContextDidSaveNotification, object: savingContext)
+        
+    }()
   
   private lazy var coordinator : NSPersistentStoreCoordinator = {
     let coordinator : NSPersistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.model)

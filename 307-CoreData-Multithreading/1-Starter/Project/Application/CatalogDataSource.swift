@@ -47,6 +47,12 @@ class CatalogDataSource : NSObject, NSFetchedResultsControllerDelegate
   
   @IBAction func loadCourses() {
     
+    let importer = CourseImporter(stack: stack)
+    importer.importJSONDataInResourceNamed("Courses.json")
+    stack.save()
+    
+    
+    
   }
   
   func courseAtIndexPath(indexPath:NSIndexPath) -> Course
