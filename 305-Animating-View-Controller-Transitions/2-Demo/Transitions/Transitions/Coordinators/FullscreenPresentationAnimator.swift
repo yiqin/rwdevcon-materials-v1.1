@@ -12,7 +12,7 @@ import UIKit
 class FullscreenPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
   func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-    return 0.4
+    return 0.8
   }
 
   func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
