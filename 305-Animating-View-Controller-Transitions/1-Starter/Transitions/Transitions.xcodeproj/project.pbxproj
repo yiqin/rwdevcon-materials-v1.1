@@ -19,6 +19,9 @@
 		29289A591A06F73D0008AF33 /* feed_images in Resources */ = {isa = PBXBuildFile; fileRef = 29289A581A06F73D0008AF33 /* feed_images */; };
 		29D996EE1A1869D700806C77 /* LoadingModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D996ED1A1869D700806C77 /* LoadingModal.swift */; };
 		29F4470D1A0732E5006AACBB /* UIImageView-Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F4470C1A0732E5006AACBB /* UIImageView-Async.swift */; };
+		8D179FD01A8656CB00629942 /* FullscreenPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D179FCF1A8656CB00629942 /* FullscreenPresentationDelegate.swift */; };
+		8D179FD21A86570500629942 /* FullscreenPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D179FD11A86570500629942 /* FullscreenPresentationAnimator.swift */; };
+		8D179FD41A86571B00629942 /* FullscreenDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D179FD31A86571B00629942 /* FullscreenDismissAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +52,9 @@
 		29289A581A06F73D0008AF33 /* feed_images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = feed_images; sourceTree = "<group>"; };
 		29D996ED1A1869D700806C77 /* LoadingModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingModal.swift; path = Transitions/Views/LoadingModal.swift; sourceTree = "<group>"; };
 		29F4470C1A0732E5006AACBB /* UIImageView-Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView-Async.swift"; path = "Transitions/Utilities/UIImageView-Async.swift"; sourceTree = "<group>"; };
+		8D179FCF1A8656CB00629942 /* FullscreenPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FullscreenPresentationDelegate.swift; path = Transitions/Vendor/FullscreenPresentationDelegate.swift; sourceTree = "<group>"; };
+		8D179FD11A86570500629942 /* FullscreenPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenPresentationAnimator.swift; sourceTree = "<group>"; };
+		8D179FD31A86571B00629942 /* FullscreenDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenDismissAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,9 @@
 		29F4470E1A0738B3006AACBB /* Animation Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				8D179FCF1A8656CB00629942 /* FullscreenPresentationDelegate.swift */,
+				8D179FD11A86570500629942 /* FullscreenPresentationAnimator.swift */,
+				8D179FD31A86571B00629942 /* FullscreenDismissAnimator.swift */,
 			);
 			name = "Animation Coordinators";
 			sourceTree = "<group>";
@@ -231,12 +240,15 @@
 			files = (
 				292899EE1A06CF070008AF33 /* PhotoCell.swift in Sources */,
 				29D996EE1A1869D700806C77 /* LoadingModal.swift in Sources */,
+				8D179FD01A8656CB00629942 /* FullscreenPresentationDelegate.swift in Sources */,
 				292899E51A06CDA40008AF33 /* PhotosController.swift in Sources */,
+				8D179FD41A86571B00629942 /* FullscreenDismissAnimator.swift in Sources */,
 				292899F71A06D7430008AF33 /* PhotoImporter.swift in Sources */,
 				292899C51A06C9890008AF33 /* AppDelegate.swift in Sources */,
 				29F4470D1A0732E5006AACBB /* UIImageView-Async.swift in Sources */,
 				292899F21A06CF8F0008AF33 /* PhotoModel.swift in Sources */,
 				292899EC1A06CE5A0008AF33 /* PhotoDetailController.swift in Sources */,
+				8D179FD21A86570500629942 /* FullscreenPresentationAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
