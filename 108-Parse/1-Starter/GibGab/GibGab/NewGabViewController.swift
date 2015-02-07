@@ -29,9 +29,22 @@ class NewGabViewController: UIViewController, UITextViewDelegate {
 
     // (TODO:DEMO) Save Gab data to Parse
     // The following will then be moved to a continuation block that runs after the save
+    
+    
+    var gab = PFObject(className: "Gabs")
+    gab["gabText"] = gabText.text
+    gab["gabVotes"] = 0
+    gab["gabVoters"] = []
+    gab.saveInBackgroundWithBlock { (success:Bool!, error:NSError!) -> Void in
+        
+        activity.stopAnimating()
+        activity.removeFromSuperview()
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
+    
       
-    activity.stopAnimating()
-    activity.removeFromSuperview()
-    navigationController?.popViewControllerAnimated(true)
+    
   }
 }

@@ -34,15 +34,27 @@ class GabsViewController: PFQueryTableViewController {
     var query = PFQuery(className: className)
     
     // (TODO:DEMO) Remove this and add code to properly constrain and order the query
-    query.whereKey("invalid", equalTo: true)
+//    query.whereKey("invalid", equalTo: true)
     
-    return query;
+    query.orderByDescending("createdAt")
+    query.limit = 50 // 120 objects default value
+    
+    
+    
+    return query
   }
     
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     var cell = tableView.dequeueReusableCellWithIdentifier("GabCell") as GabCell
     
     // (TODO:DEMO) Use the Parse Object to populate the cell
+    
+    var object = objectAtIndexPath(indexPath)
+    cell.gabText.text = object["gabText"] as String!
+    cell.gabVote.text = object["gabVotes"].stringValue
+    cell.GabObject = object
+    
+    
     
     return cell
   }

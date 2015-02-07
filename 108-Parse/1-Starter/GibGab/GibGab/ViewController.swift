@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import ParseUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PFSignUpViewControllerDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,7 +31,21 @@ class ViewController: UIViewController {
   @IBAction func didTapSignUp(sender: AnyObject) {
       
     // (TODO:DEMO) Add code to launch PFSignUpViewController
-      
+    var signupController = PFSignUpViewController()
+    signupController.fields = PFSignUpFields.UsernameAndPassword | PFSignUpFields.SignUpButton | PFSignUpFields.DismissButton
+    signupController.delegate = self;
+    presentViewController(signupController, animated: true, completion: nil)
+    
+    
   }
+    
+    func signUpViewController(signUpController: PFSignUpViewController!, didSignUpUser user: PFUser!) {
+        signUpController.dismissViewControllerAnimated(true, completion: nil)
+        performSegueWithIdentifier("goToMain", sender: self)
+    }
+    
+    
+    
+    
 }
 
