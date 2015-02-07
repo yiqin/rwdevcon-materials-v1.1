@@ -10,6 +10,10 @@ import UIKit
 
 class PhotosController: UICollectionViewController {
 
+  var selectedView: UIView?
+  var selectedViewOriginRect = CGRect.zeroRect
+  
+  
   let HeaderIdentifier = "HeaderIdentifier"
   let dateFormatter: NSDateFormatter = {
     let df = NSDateFormatter()
@@ -69,6 +73,16 @@ class PhotosController: UICollectionViewController {
   // MARK: UICollectionViewDelegate
 
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    
+    // 1
+    if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? PhotoCell {
+      // 2
+      selectedView = cell.photoImageView
+      // 3
+      selectedViewOriginRect = cell.contentView.convertRect(cell.photoImageView.frame, toView: view)
+    }
+    
+    
     let destination = PhotoDetailController()
     destination.photo = photos[indexPath.row]
     destination.modalPresentationStyle = .Custom
