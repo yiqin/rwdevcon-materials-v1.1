@@ -41,7 +41,7 @@ extension CoreDataStack
   }
   
   public func create<T : NSManagedObject>(type:T.Type) -> T? {
-    return create(type, inContext: mainContext)
+    return create(type, inContext: backgroundContext)
   }
   
   func create<T : NSManagedObject>(type:T.Type, inContext context:NSManagedObjectContext) -> T? {
