@@ -45,10 +45,19 @@ class GabsViewController: PFQueryTableViewController {
     cell.downButton.hidden = false
 
     var object = objectAtIndexPath(indexPath)
-    cell.gabText.text = object["gabText"] as String!
+    // cell.gabText.text = object["gabText"] as String!
+    
+    if let gabTextString = object["gabText"] as? String {
+        cell.gabText.text = gabTextString
+    }
+    
     cell.gabVote.text = object["gabVotes"].stringValue
+    
+    
     cell.GabObject = object
-      
+    
+    
+    // NOTE: Array <String.......>
     var voters = object["gabVoters"] as Array<String>
     for voter in voters {
       if (voter == PFUser.currentUser().objectId) {

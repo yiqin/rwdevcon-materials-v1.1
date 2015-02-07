@@ -30,7 +30,8 @@ class NewGabViewController: UIViewController, UITextViewDelegate {
     var gab = PFObject(className: "Gabs")
     gab["gabText"] = gabText.text
     gab["gabVotes"] = 0
-    gab["gabVoters"] = []
+    gab["gabVoters"] = []   // Array .. now. But I can use Relation in the future....
+    
     gab.saveInBackgroundWithBlock {
       (success: Bool, error: NSError!) -> Void in
       activity.stopAnimating()
