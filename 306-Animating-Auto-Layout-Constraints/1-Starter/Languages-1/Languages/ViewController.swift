@@ -64,6 +64,32 @@ class ViewController: UIViewController {
   func adjustHeights(viewToSelect: UIView, shouldSelect: Bool) {
     println("tapped: \(viewToSelect) select: \(shouldSelect)")
     
+    
+    var newConstraints = [NSLayoutConstraint]()
+    
+    // I don't know this line of code before
+    for constraint in viewToSelect.superview!.constraints() as [NSLayoutConstraint] {
+        if contains(views, constraint.firstItem as UIView) && constraint.firstAttribute == .Height {
+            println("height con found")
+            
+            NSLayoutConstraint.deactivateConstraints([constraint])
+            
+            
+            var multiplier: CGFloat = 0.34
+            if shouldSelect {
+                multiplier = (viewToSelect == constraint.firstItem as NSObject) ? 0.55 : 0.23
+            }
+            
+            let con = NSLayoutConstraint(item: constraint.firstItem, attribute: .Height, relatedBy: .Equal, toItem: constraint.secondItem, attribute: .Height, multiplier: multiplier, constant: 0.0)
+            
+            // Kind of update constraints
+            newConstraints.append(con)
+        }
+    }
+    
+    NSLayoutConstraint.activateConstraints(newConstraints)
+
+    
   }
   
   // deselects any selected views and selects the tapped view
@@ -86,6 +112,17 @@ class ViewController: UIViewController {
           
         }, completion: nil)
     }
+    
+    
+    UIView.animateWithDuration(1.0, delay: 0.00,
+        usingSpringWithDamping: 0.4, initialSpringVelocity: 1.0,
+        options: .CurveEaseIn | .AllowUserInteraction | .BeginFromCurrentState,
+        animations: {
+            
+            // What does this mean ???
+            self.view.layoutIfNeeded()
+            
+        }, completion: nil)
     
   }
   
