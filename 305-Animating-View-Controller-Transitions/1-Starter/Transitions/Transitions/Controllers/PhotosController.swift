@@ -16,7 +16,15 @@ class PhotosController: UICollectionViewController {
     df.dateFormat = "MMMM dd, yyyy"
     return df
   }()
+  
+  
+  // ......................
+  let presentationDelegate = Fullaniamtiona deliet........
 
+  
+  
+  
+  
   var photos = [PhotoModel]()
 
   override func viewDidLoad() {
@@ -68,6 +76,14 @@ class PhotosController: UICollectionViewController {
 
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     let destination = PhotoDetailController()
+    
+    
+    //...........................................
+    destination.modelPresentationSytel = .Custom
+    destination.transitionging ..............
+    
+    
+    
     destination.photo = photos[indexPath.row]
     presentViewController(destination, animated: true, completion: nil)
   }

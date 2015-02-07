@@ -10,4 +10,13 @@ import UIKit
 
 class FullscreenPresentationAnimator: NSObject {
 
+  
+  
+  func transitionDuration(transitionContext:UIViewCOntrollerContextTransition)->NSTimeInternval{
+    return 0.4
+  }
+  
+  func animate
+  
+  
 }
