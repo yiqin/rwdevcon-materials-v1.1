@@ -25,6 +25,7 @@ class FullscreenPresentationAnimator: NSObject,UIViewControllerAnimatedTransitio
     let contrainer = transitionContext.contrainerView()
     let duration = transitionDuration(transitionContext)
     
+    // If this line is not called. nothing will happen.
     container.addSubview(to.view)
     
     
