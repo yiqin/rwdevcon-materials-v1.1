@@ -29,6 +29,9 @@ let kSelectedDetailsText = "Excercises: 67%\nConversations: 50%\nDaily streak: 4
 // MARK: - ViewController
 class ViewController: UIViewController {
   
+    @IBOutlet var speakingTrailing: NSLayoutConstraint!
+    
+    
   // MARK: IB outlets
   @IBOutlet var speakingDetails: UILabel!
   @IBOutlet var understandingImage: UIImageView!
@@ -147,6 +150,8 @@ class ViewController: UIViewController {
       }  
     }
     
+
+    
   }
 
   func toggleSpeaking(tap: UITapGestureRecognizer) {
@@ -157,10 +162,19 @@ class ViewController: UIViewController {
       usingSpringWithDamping: 0.4, initialSpringVelocity: 1.0,
       options: .CurveEaseIn, animations: {
         
+        self.speakingTrailing.constant = isSelected ? self.speakingView.frame.size.width/2.0 : 0.0
+        
         self.updateSpeakingDetails(selected: isSelected)
         
       }, completion: nil)
 
+    
+    deselectCurrentView = {
+        
+        self.speakingTrailing.constant = 0.0
+        self.updateSpeakingDetails(selected: false)
+    }
+    
   }
 
   //reading
