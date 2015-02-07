@@ -12,6 +12,8 @@ import Swell
 @IBDesignable @objc
 public class CoreDataStack : NSObject
 {
+    
+    // Use this logger.......
   internal lazy var logger : Logger = Swell.getLogger("CoreDataStack")
   
   var storeName : String?
