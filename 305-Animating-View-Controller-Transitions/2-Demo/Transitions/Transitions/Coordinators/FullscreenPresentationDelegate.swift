@@ -12,10 +12,12 @@ import UIKit
 class FullscreenPresentationDelegate: NSObject, UIViewControllerTransitioningDelegate {
 
   func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    println("dismissed")
     return FullscreenDismissAnimator()
   }
 
   func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    println("presenting")
     return FullscreenPresentationAnimator()
   }
 
