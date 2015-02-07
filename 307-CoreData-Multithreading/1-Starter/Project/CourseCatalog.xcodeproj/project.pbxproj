@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D057D2D1A868A4400847B77 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755ADD81A6AFC1200441F13 /* Runes.framework */; };
+		8D057D2E1A868A4400847B77 /* Runes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C755ADD81A6AFC1200441F13 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C73517D41A48D40300193CAE /* Course+JSONDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73517D31A48D40300193CAE /* Course+JSONDecoding.swift */; };
 		C73517DB1A49D93F00193CAE /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73517D91A49D93F00193CAE /* Argo.framework */; };
 		C73517DC1A49D93F00193CAE /* Swell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73517DA1A49D93F00193CAE /* Swell.framework */; };
@@ -71,6 +73,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76222FC1A521C3E009D2879 /* Argo.framework in Embed Frameworks */,
+				8D057D2E1A868A4400847B77 /* Runes.framework in Embed Frameworks */,
 				C76222FD1A521C41009D2879 /* Swell.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -117,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D057D2D1A868A4400847B77 /* Runes.framework in Frameworks */,
 				C73517DB1A49D93F00193CAE /* Argo.framework in Frameworks */,
 				C755ADD91A6AFC1200441F13 /* Runes.framework in Frameworks */,
 				C73517DC1A49D93F00193CAE /* Swell.framework in Frameworks */,
