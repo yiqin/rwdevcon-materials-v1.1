@@ -129,11 +129,25 @@ class ViewController: UIViewController {
   //speaking
   func updateSpeakingDetails(#selected: Bool) {
     speakingDetails.text = selected ? kSelectedDetailsText : kDeselectedDetailsText
+    
+    for constraint in speakingDetails.superview!.constraints() as [NSLayoutConstraint] {
+        
+        if constraint.firstItem as UIView == speakingDetails && constraint {
+            constraint.constant =
+            
+            
+            
+        }
+    }
+    
+    
   }
 
   func toggleSpeaking(tap: UITapGestureRecognizer) {
     toggleView(tap)
     let isSelected = (selectedView==tap.view!)
+    
+    UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: <#CGFloat#>, options: <#UIViewAnimationOptions#>, animations: <#() -> Void##() -> Void#>, completion: nil)
     
   }
   
