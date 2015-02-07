@@ -10,6 +10,9 @@ import Foundation
 import CoreData
 import Swell
 
+
+// Seperate the function.
+
 private func entityNameFromType<T : NSManagedObject>(type:T.Type) -> String
 {
   if let entityName = type.entityName().componentsSeparatedByString(".").last {
@@ -52,6 +55,27 @@ extension CoreDataStack
   }
   
   func saveUsing(Context context:NSManagedObjectContext) {
+    let logger = self.logger
+    var error: NSError?
+    
+    if context.hasChanges{
+        
+        // Why & here?
+        let saved = context.save(&error)
+        
+        if !saved {
+            logger.error("Error: \(error)")
+        }
+    }
+    else {
+        logger.info("No Changes")
+        
+    }
+    
+
+    
+    
+    
     
   }
 }

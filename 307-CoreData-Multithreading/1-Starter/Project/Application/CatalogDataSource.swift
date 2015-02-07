@@ -19,7 +19,11 @@ import Swell
 
 class CatalogDataSource : NSObject, NSFetchedResultsControllerDelegate
 {
+    
+    // Change here .....
+    // Change it to AnyObject, then change it back to CatalogDataSourceDelegate
   @IBOutlet weak var delegate : CatalogDataSourceDelegate?
+    
   @IBOutlet private var stack : CoreDataStack!
   private let logger = Swell.getLogger("CatalogDataSource")
   

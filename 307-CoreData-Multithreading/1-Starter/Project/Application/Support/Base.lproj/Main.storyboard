@@ -120,6 +120,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
+                                    <outlet property="dataSource" destination="EuN-6w-eCn" id="fdf-le-GrD"/>
                                     <outlet property="delegate" destination="grP-gE-McP" id="uR7-wy-3p3"/>
                                 </connections>
                             </tableView>
@@ -136,10 +137,23 @@
                         <barButtonItem key="rightBarButtonItem" title="Load Courses" id="hoo-ge-20m"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="dataSource" destination="IBd-y2-XZK" id="NTe-W0-V7P"/>
                         <outlet property="tableView" destination="yFt-qX-zxz" id="gnY-Yy-3zG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufL-kh-hBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="EuN-6w-eCn" customClass="CatalogTableViewDataSource" customModule="CourseCatalog">
+                    <connections>
+                        <outlet property="catalogDataSource" destination="IBd-y2-XZK" id="f29-PW-VaD"/>
+                    </connections>
+                </customObject>
+                <customObject id="4GU-ak-D2T" customClass="CoreDataStack" customModule="CourseCatalog" customModuleProvider="target"/>
+                <customObject id="IBd-y2-XZK" customClass="CatalogDataSource" customModule="CourseCatalog" customModuleProvider="target">
+                    <connections>
+                        <outlet property="delegate" destination="EuN-6w-eCn" id="Zw1-QB-khA"/>
+                        <outlet property="stack" destination="4GU-ak-D2T" id="hcp-gz-iFV"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="685" y="-622"/>
         </scene>
