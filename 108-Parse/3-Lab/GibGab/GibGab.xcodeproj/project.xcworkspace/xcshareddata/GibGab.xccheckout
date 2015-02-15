@@ -10,31 +10,31 @@
 	<string>GibGab</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EC99C848604DF7E2E94A5417D3016781003A0781</key>
-		<string>github.com:gfosco/RWDevCon2015-108-Parse.git</string>
+		<key>8D702C7B1DAC69E1BDC400E9698A1A1C13BF2C75</key>
+		<string>https://github.com/yiqin/rwdevcon-materials-v1.1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>3-Lab/GibGab/GibGab.xcodeproj</string>
+	<string>108-Parse/3-Lab/GibGab/GibGab.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EC99C848604DF7E2E94A5417D3016781003A0781</key>
-		<string>../../../..</string>
+		<key>8D702C7B1DAC69E1BDC400E9698A1A1C13BF2C75</key>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:gfosco/RWDevCon2015-108-Parse.git</string>
+	<string>https://github.com/yiqin/rwdevcon-materials-v1.1.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EC99C848604DF7E2E94A5417D3016781003A0781</string>
+	<string>8D702C7B1DAC69E1BDC400E9698A1A1C13BF2C75</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EC99C848604DF7E2E94A5417D3016781003A0781</string>
+			<string>8D702C7B1DAC69E1BDC400E9698A1A1C13BF2C75</string>
 			<key>IDESourceControlWCCName</key>
-			<string>rwdevcon</string>
+			<string>rwdevcon-materials-v1.1</string>
 		</dict>
 	</array>
 </dict>
